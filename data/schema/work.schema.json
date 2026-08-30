@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Lweiqi878/AI-generate-video/data/schema/work.schema.json",
+  "title": "AI Generate Video v2 Work Seed",
+  "type": "object",
+  "required": [
+    "id", "game", "character", "mode", "title", "form", "scene",
+    "hook", "beats", "payoff", "dialogue", "sound", "loop",
+    "camera", "priority", "risk", "tags", "r1_query", "qc"
+  ],
+  "properties": {
+    "id": {"type": "string", "pattern": "^V2-[0-9]{3}$"},
+    "game": {"type": "string", "minLength": 1},
+    "character": {"type": "string", "minLength": 1},
+    "mode": {"enum": ["10s", "60s"]},
+    "title": {"type": "string", "minLength": 2},
+    "form": {"type": "string", "minLength": 2},
+    "scene": {"type": "string", "minLength": 2},
+    "hook": {"type": "string", "minLength": 4},
+    "beats": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 4},
+      "minItems": 4,
+      "maxItems": 6
+    },
+    "payoff": {"type": "string", "minLength": 4},
+    "dialogue": {"type": "string"},
+    "sound": {"type": "string", "minLength": 2},
+    "loop": {"type": "string", "minLength": 2},
+    "camera": {"type": "string", "minLength": 2},
+    "priority": {"enum": ["P0", "P1", "P2"]},
+    "risk": {"enum": ["low", "medium", "high"]},
+    "tags": {
+      "type": "array",
+      "items": {"type": "string"},
+      "minItems": 3
+    },
+    "r1_query": {"type": "string", "minLength": 2},
+    "qc": {"type": "string", "minLength": 4}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"mode": {"const": "10s"}}},
+      "then": {"properties": {"beats": {"minItems": 4, "maxItems": 4}}}
+    },
+    {
+      "if": {"properties": {"mode": {"const": "60s"}}},
+      "then": {"properties": {"beats": {"minItems": 6, "maxItems": 6}}}
+    }
+  ],
+  "additionalProperties": false
+}
