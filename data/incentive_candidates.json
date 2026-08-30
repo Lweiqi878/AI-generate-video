@@ -1,0 +1,38 @@
+{
+  "as_of": "2026-08-30",
+  "scope": "选题优先级与活动核验队列，不代表当前存在固定奖金，也不代表AI作品自动符合任何一期活动规则",
+  "scoring": {
+    "content_fit": "1-5，本项目的手办化、拟人化、微缩场景、10秒循环与60秒短剧适配度",
+    "audience_fit": "1-5，角色认知度、短视频讨论空间和跨平台传播潜力的编辑判断",
+    "production_control": "1-5，使用R1/R2/R3/R4后保持人物与场景稳定的可控程度",
+    "competition_pressure": "1-5，越高代表同题材竞争越强，不是奖励分"
+  },
+  "rules": [
+    "奖金、流量券、现金池、发布时间和有效平台必须以当期官方规则页为准",
+    "必须单独记录是否允许AI生成、AI辅助、模型训练素材和商业化二创",
+    "没有明确允许时，不把AI作品提交到官方征集；可转为普通平台非官方同人发布",
+    "平台基础创作收益与游戏官方活动奖励分别核算，不得混为同一个激励"
+  ],
+  "included": [
+    {"game":"崩坏：星穹铁道","count":14,"content_fit":5,"audience_fit":5,"production_control":4,"competition_pressure":5,"tier":"A","decision":"主力角色短剧池","official_search_query":"崩坏星穹铁道 官方 创作者激励 活动 规则","current_event_verified":false},
+    {"game":"绝区零","count":14,"content_fit":5,"audience_fit":5,"production_control":5,"competition_pressure":4,"tier":"A","decision":"主力现实物件互动池","official_search_query":"绝区零 官方 创作者激励 活动 规则","current_event_verified":false},
+    {"game":"明日方舟：终末地","count":12,"content_fit":5,"audience_fit":5,"production_control":4,"competition_pressure":4,"tier":"A","decision":"版本热度与工业场景主力池","official_search_query":"明日方舟终末地 官方 创作活动 激励 规则","current_event_verified":false},
+    {"game":"异环","count":10,"content_fit":5,"audience_fit":4,"production_control":4,"competition_pressure":3,"tier":"B-risk","decision":"普通平台都市异象内容；官方征集必须先核验AI条款","official_search_query":"异环 官方 创作征集 AI生成 规则","current_event_verified":false},
+    {"game":"无限暖暖","count":10,"content_fit":5,"audience_fit":5,"production_control":5,"competition_pressure":4,"tier":"A","decision":"新增重点：服装、材质、微缩世界和女性向平台适配度高","official_search_query":"无限暖暖 官方 创作者激励 二创 活动 规则","current_event_verified":false},
+    {"game":"恋与深空","count":8,"content_fit":4,"audience_fit":5,"production_control":4,"competition_pressure":5,"tier":"A/B","decision":"新增重点：情绪化日常奇想；禁用官方声线克隆","official_search_query":"恋与深空 官方 创作活动 激励 规则 AI","current_event_verified":false},
+    {"game":"蛋仔派对","count":8,"content_fit":5,"audience_fit":5,"production_control":5,"competition_pressure":5,"tier":"A","decision":"新增重点：UGC、低龄友好、物理喜剧和用户自有皮肤","official_search_query":"蛋仔派对 官方 创作者中心 激励 规则","current_event_verified":false},
+    {"game":"燕云十六声","count":6,"content_fit":5,"audience_fit":4,"production_control":4,"competition_pressure":4,"tier":"A/B","decision":"新增重点：国风建筑、微缩江湖和历史场景","official_search_query":"燕云十六声 官方 创作者激励 活动 规则","current_event_verified":false},
+    {"game":"逆水寒手游","count":6,"content_fit":5,"audience_fit":4,"production_control":4,"competition_pressure":4,"tier":"A/B","decision":"新增重点：庄园、时装、自建角色与宠物内容","official_search_query":"逆水寒手游 官方 创作激励 活动 规则","current_event_verified":false},
+    {"game":"王者荣耀","count":6,"content_fit":4,"audience_fit":5,"production_control":4,"competition_pressure":5,"tier":"B","decision":"大流量补充池，严格控制同质化与完整对局复刻","official_search_query":"王者荣耀 官方 创作者激励 计划 规则","current_event_verified":false},
+    {"game":"原神／千星奇域","count":6,"content_fit":4,"audience_fit":5,"production_control":4,"competition_pressure":5,"tier":"B","decision":"显著减量；优先千星奇域/玩法化场景，不再占据主池","official_search_query":"原神 千星奇域 官方 创作激励 活动 规则","current_event_verified":false}
+  ],
+  "reserve_watchlist": [
+    {"game":"三角洲行动","reason":"流量与赛事/版本节点潜力高，但人物手办短剧适配度低于战术装备、载具和地图实验","official_search_query":"三角洲行动 官方 创作者激励 规则"},
+    {"game":"永劫无间","reason":"动作与国风适配，但高速武打对H3角色稳定和镜头衔接要求较高","official_search_query":"永劫无间 官方 创作者计划 激励 规则"},
+    {"game":"无畏契约","reason":"平台热度高但竞争极强，且角色技能、武器与品牌视觉复刻风险较高","official_search_query":"无畏契约 官方 创作者激励 活动 规则"},
+    {"game":"尘白禁区","reason":"人物内容适配度高，先观察当期官方活动规模、AI条款和平台覆盖","official_search_query":"尘白禁区 官方 创作活动 激励 规则 AI"},
+    {"game":"重返未来：1999","reason":"美术和叙事高度适配，奖励活动通常更依赖具体版本节点，适合作为专题补充池","official_search_query":"重返未来1999 官方 创作活动 激励 规则"},
+    {"game":"二重螺旋","reason":"新角色与新版本窗口可能带来增量，但需先核验稳定角色资料和当期规则","official_search_query":"二重螺旋 官方 创作者激励 活动 规则"}
+  ],
+  "excluded_from_v2_main_slate": ["鸣潮", "明日方舟", "崩坏3", "第五人格"]
+}
