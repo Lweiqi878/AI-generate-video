@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# Reproducible build products are uploaded by CI rather than committed.
+generated/
+
+# Local production intermediates; selected final exports live in deliverables/.
+production/
+*.tmp
+*.part
+*_final_frame1.jpg

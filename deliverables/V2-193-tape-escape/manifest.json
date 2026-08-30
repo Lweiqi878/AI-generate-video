@@ -1,0 +1,120 @@
+{
+  "work_id": "V2-193",
+  "title": "午夜录像带从货架集体越狱",
+  "generation": {
+    "engine": "MiniMax H3 local Studio",
+    "studio_job_id": "260830-204712-51bf35",
+    "mode": "t2v",
+    "model": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+    "turbo_lora": "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+    "seed": 2026083099,
+    "steps": 8,
+    "scheduler": "simple",
+    "canvas": [
+      480,
+      832
+    ],
+    "frames": 243,
+    "fps": 24,
+    "requested_seconds": 10,
+    "actual_seconds": 10.125,
+    "prompt": {
+      "path": "deliverables/V2-193-tape-escape/prompt.txt",
+      "bytes": 1058,
+      "sha256": "37ff106b1d0139661cf44914d0b46e6b3edac65aaa4578eaaf0ee5a074f035a8"
+    },
+    "raw_media": {
+      "path": "production/V2-193-tape-escape/raw/V2-193_h3_raw.mp4",
+      "bytes": 1283488,
+      "sha256": "647be27096a0090b6936cf77c57c137240b9d60125520333140593731bd3cf7b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 480,
+            "height": 832,
+            "r_frame_rate": "24/1"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "32000",
+            "channels": 2,
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "10.125000",
+          "size": "1283488",
+          "bit_rate": "1014113"
+        }
+      },
+      "tracked_in_git": false
+    }
+  },
+  "finishing": {
+    "script": "scripts/render_pilot_videos.ps1",
+    "canvas": [
+      1080,
+      1920
+    ],
+    "video": "H.264 High, CRF 18, slow preset, yuv420p, faststart",
+    "audio": "AAC stereo 48 kHz 192 kbps; EBU R128 target -16 LUFS with -2.0 dBTP encode headroom (peak-limited when necessary)",
+    "treatment": "Lanczos upscale/crop, restrained contrast and saturation, mild unsharp, deterministic ASS overlays",
+    "captions": {
+      "path": "deliverables/V2-193-tape-escape/captions.ass",
+      "bytes": 1296,
+      "sha256": "f78f37a40cc19b7a7a00040310e12490a62b93ae60d65bd780062cceccd854cf"
+    }
+  },
+  "deliverables": {
+    "video": {
+      "path": "deliverables/V2-193-tape-escape/V2-193_final.mp4",
+      "bytes": 8028346,
+      "sha256": "286776d3fd2f69d8c8878be6ea1a56c0db84958cd6cb381caec80ad13c52f1d1",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920,
+            "r_frame_rate": "24/1"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "10.200000",
+          "size": "8028346",
+          "bit_rate": "6296741"
+        }
+      },
+      "measured_loudness": {
+        "integrated_lufs": -18.91,
+        "true_peak_dbtp": -1.56,
+        "loudness_range_lu": 2.1
+      }
+    },
+    "cover": {
+      "path": "deliverables/V2-193-tape-escape/V2-193_cover.jpg",
+      "bytes": 168287,
+      "sha256": "074612b38f8d43a7cce57baa54c60ac48f2962ecb3abbd989accd921c76e7572"
+    }
+  },
+  "disclosure": "AI生成 / AI辅助制作；本地MiniMax H3生成，FFmpeg确定性后期。"
+}

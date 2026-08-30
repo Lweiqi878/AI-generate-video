@@ -1,0 +1,832 @@
+{
+  "policy": {
+    "expected_merged_count": 194,
+    "excluded_games": [
+      "崩坏3",
+      "明日方舟",
+      "第五人格",
+      "鸣潮"
+    ],
+    "deduplication": "exact and normalized title collisions fail validation; semantic candidates are reported for review"
+  },
+  "github_source": {
+    "repository": "https://github.com/Lweiqi878/AI-generate-video",
+    "commit": "2233ffcd5815b3704287ff6acca7f8c9fa7a4101",
+    "works": 100,
+    "id_range": [
+      "V2-001",
+      "V2-100"
+    ]
+  },
+  "local_source": {
+    "filename": "works.json",
+    "sha256": "642f823cf6abce023289111d4c038a7e78601b5b26d5b20e47b4bb5bf4e1b5c2",
+    "input_works": 100,
+    "retained_works": 94,
+    "excluded_works": [
+      {
+        "legacy_id": 91,
+        "game": "鸣潮",
+        "character": "今汐",
+        "title": "今汐的玉龙纸镇守住了豆浆机"
+      },
+      {
+        "legacy_id": 92,
+        "game": "鸣潮",
+        "character": "椿",
+        "title": "椿的红花发条玩具追光点"
+      },
+      {
+        "legacy_id": 93,
+        "game": "明日方舟",
+        "character": "阿米娅",
+        "title": "阿米娅的文件山长出了兔耳"
+      },
+      {
+        "legacy_id": 94,
+        "game": "明日方舟",
+        "character": "能天使",
+        "title": "能天使的苹果派无人机抢先开饭"
+      },
+      {
+        "legacy_id": 95,
+        "game": "崩坏3",
+        "character": "爱莉希雅",
+        "title": "爱莉希雅的水晶音乐盒少了一只蝴蝶"
+      },
+      {
+        "legacy_id": 96,
+        "game": "第五人格",
+        "character": "园丁",
+        "title": "园丁的工具箱会自己修椅子"
+      }
+    ],
+    "generated_slates": [
+      "data/slates/05_works_V2-101_V2-125.jsonl",
+      "data/slates/06_works_V2-126_V2-150.jsonl",
+      "data/slates/07_works_V2-151_V2-175.jsonl",
+      "data/slates/08_works_V2-176_V2-194.jsonl"
+    ]
+  },
+  "result": {
+    "works": 194,
+    "id_range": [
+      "V2-001",
+      "V2-194"
+    ],
+    "legacy_mapping": [
+      {
+        "new_id": "V2-101",
+        "legacy_id": 1,
+        "game": "原神",
+        "character": "可莉",
+        "title": "别碰小企鹅可莉的尾巴",
+        "legacy_record_sha256": "98615904990aa1b70d72a0b4b39fb68319a289c29df7a5a3e43b74398b1239dd"
+      },
+      {
+        "new_id": "V2-102",
+        "legacy_id": 2,
+        "game": "原神",
+        "character": "芙宁娜",
+        "title": "发条芙宁娜拒绝谢幕",
+        "legacy_record_sha256": "8e0ac1ef105e90fbdbdce3d5b137ced3c0b4e0294e4f84de1cd737ae15cc0b0d"
+      },
+      {
+        "new_id": "V2-103",
+        "legacy_id": 3,
+        "game": "原神",
+        "character": "纳西妲",
+        "title": "纳西妲的便签树长太快了",
+        "legacy_record_sha256": "12c7c81326634d65aa9d09696cf1a9c15a6710b16206df15fbd56ade857ec1d5"
+      },
+      {
+        "new_id": "V2-104",
+        "legacy_id": 4,
+        "game": "原神",
+        "character": "胡桃",
+        "title": "胡桃和会怕鬼的扫地机",
+        "legacy_record_sha256": "7df0f7d74ac5eec2a7c024c61c552653abb190d02f82a59784db874bbf44cc9b"
+      },
+      {
+        "new_id": "V2-105",
+        "legacy_id": 5,
+        "game": "原神",
+        "character": "钟离",
+        "title": "钟离的茶杯孵出一条小龙",
+        "legacy_record_sha256": "611f7b5308a7224df4bd634124ca37fe13f543d333a0e8669c9d5388cbb05670"
+      },
+      {
+        "new_id": "V2-106",
+        "legacy_id": 6,
+        "game": "原神",
+        "character": "雷电将军",
+        "title": "雷电将军第一次做便当",
+        "legacy_record_sha256": "98af171be0d06add54d07e1d682fcbe40ae056b908042458d2893d1f08fdd699"
+      },
+      {
+        "new_id": "V2-107",
+        "legacy_id": 7,
+        "game": "原神",
+        "character": "那维莱特",
+        "title": "水獭那维莱特的浴缸审判",
+        "legacy_record_sha256": "071ab7ebd7c5a9962dd9255e5f02209bf062b8a65442a5fde6f865e5c5bf8f8e"
+      },
+      {
+        "new_id": "V2-108",
+        "legacy_id": 8,
+        "game": "原神",
+        "character": "阿蕾奇诺",
+        "title": "阿蕾奇诺的娃娃屋家规",
+        "legacy_record_sha256": "b118dc4e136dce3b18d1419267ddf4f794e67e68d236e5dbc40ecf247f6ce3f7"
+      },
+      {
+        "new_id": "V2-109",
+        "legacy_id": 9,
+        "game": "原神",
+        "character": "流浪者",
+        "title": "流浪者的雨伞不肯落地",
+        "legacy_record_sha256": "1d09e28e28e5e0bcfbe44af9aea65828fc67779edf3f36050e1cb37ef7fc784d"
+      },
+      {
+        "new_id": "V2-110",
+        "legacy_id": 10,
+        "game": "原神",
+        "character": "娜维娅",
+        "title": "娜维娅的马卡龙大炮",
+        "legacy_record_sha256": "1d9a6c163a53cee925df802b35fac926149a741992406d7dcbf439a3f656ac07"
+      },
+      {
+        "new_id": "V2-111",
+        "legacy_id": 11,
+        "game": "原神",
+        "character": "甘雨",
+        "title": "甘雨把云朵枕头睡没了",
+        "legacy_record_sha256": "1e874f11b7d901a5bd1f648359582b8096743df90ea19b3e44a1a87d7044a753"
+      },
+      {
+        "new_id": "V2-112",
+        "legacy_id": 12,
+        "game": "原神",
+        "character": "申鹤",
+        "title": "申鹤的红绳被猫当逗猫棒",
+        "legacy_record_sha256": "8442684a8d52c21a61b65c1b631ae231eb0aa6b64dd086263a179900883beb70"
+      },
+      {
+        "new_id": "V2-113",
+        "legacy_id": 13,
+        "game": "原神",
+        "character": "八重神子",
+        "title": "狐狸主编的午夜改稿",
+        "legacy_record_sha256": "e4a0ff3dc8cb0b80e2bd64a1bdfe5a2a7af93513293b5f82b1d88ac0d45576e9"
+      },
+      {
+        "new_id": "V2-114",
+        "legacy_id": 14,
+        "game": "原神",
+        "character": "温迪",
+        "title": "温迪的瓶盖交响乐",
+        "legacy_record_sha256": "652c9565b5a93a7e4517510eea6b2a64f52aa8df8d45fc3012f5f6ac60f96102"
+      },
+      {
+        "new_id": "V2-115",
+        "legacy_id": 15,
+        "game": "原神",
+        "character": "提纳里",
+        "title": "提纳里的耳朵先听见零食",
+        "legacy_record_sha256": "5702d93ca2fd055b31c2950734ac5a7185b0727da10bd6d79cb7157afdeb20fa"
+      },
+      {
+        "new_id": "V2-116",
+        "legacy_id": 16,
+        "game": "原神",
+        "character": "赛诺",
+        "title": "赛诺的冷笑话检测仪",
+        "legacy_record_sha256": "674aa0e0bdc5a84e07c384e4e8f8439aab55cd7398b8472ca366c38fc550a55c"
+      },
+      {
+        "new_id": "V2-117",
+        "legacy_id": 17,
+        "game": "原神",
+        "character": "达达利亚",
+        "title": "浴缸里的玩具鸭决斗",
+        "legacy_record_sha256": "8948054ee59e56af4a25225b51fa11170ef467ce78e5bbd49ef1a51bc32f592a"
+      },
+      {
+        "new_id": "V2-118",
+        "legacy_id": 18,
+        "game": "原神",
+        "character": "艾尔海森",
+        "title": "艾尔海森的书本堡垒",
+        "legacy_record_sha256": "003c5172647131075df73767366090478c6d8bbfff2c770151b5d5bd7c053019"
+      },
+      {
+        "new_id": "V2-119",
+        "legacy_id": 19,
+        "game": "原神",
+        "character": "闲云",
+        "title": "闲云的机械鸟咖啡机",
+        "legacy_record_sha256": "7596a9aef1004e628e3afea4585749850f08199737b7887559811f9afde6e576"
+      },
+      {
+        "new_id": "V2-120",
+        "legacy_id": 20,
+        "game": "原神",
+        "character": "玛薇卡",
+        "title": "玛薇卡的客厅迷你摩托赛",
+        "legacy_record_sha256": "cbe82947b93f3fdccc3c9464e59056ba127fd9f48d91f8043f6b329650cd20e7"
+      },
+      {
+        "new_id": "V2-121",
+        "legacy_id": 21,
+        "game": "崩坏：星穹铁道",
+        "character": "三月七",
+        "title": "三月七的相机自己抢镜",
+        "legacy_record_sha256": "dffa668b4d0a69407591e4a02263e48f13a80311c4eabb1485513d78c9a6efe7"
+      },
+      {
+        "new_id": "V2-122",
+        "legacy_id": 22,
+        "game": "崩坏：星穹铁道",
+        "character": "帕姆",
+        "title": "帕姆的清晨列车大扫除",
+        "legacy_record_sha256": "188deeb78f80b02b7a7d6f8ba230b43b824d9e8838f0b7787b768cbb879fea59"
+      },
+      {
+        "new_id": "V2-123",
+        "legacy_id": 23,
+        "game": "崩坏：星穹铁道",
+        "character": "流萤",
+        "title": "流萤的机甲便当盒",
+        "legacy_record_sha256": "d90987696d6433e435f194b4428a96616a583ceb2b3904db5c9af64f046b0b0e"
+      },
+      {
+        "new_id": "V2-124",
+        "legacy_id": 24,
+        "game": "崩坏：星穹铁道",
+        "character": "卡芙卡",
+        "title": "卡芙卡的蛛丝洗衣房",
+        "legacy_record_sha256": "fd0f7b01acba0c9ed5a79fe8308b7801a6922d4c749fc5ca79c5e981dfcab1ca"
+      },
+      {
+        "new_id": "V2-125",
+        "legacy_id": 25,
+        "game": "崩坏：星穹铁道",
+        "character": "银狼",
+        "title": "银狼把烤面包机改成游戏机",
+        "legacy_record_sha256": "865397dd5144a4606ed5855748f237f7401789e5ae465eccba2994b6e4967f6e"
+      },
+      {
+        "new_id": "V2-126",
+        "legacy_id": 26,
+        "game": "崩坏：星穹铁道",
+        "character": "砂金",
+        "title": "砂金的仓鼠轮赌场",
+        "legacy_record_sha256": "d898c4f1cc7040938650acf24234585e6e0e6fc1086944c266599f54d03dd64b"
+      },
+      {
+        "new_id": "V2-127",
+        "legacy_id": 27,
+        "game": "崩坏：星穹铁道",
+        "character": "知更鸟",
+        "title": "知更鸟的音乐盒少了一颗音符",
+        "legacy_record_sha256": "71be640f94e17c3d43bb15ce03ff53f2fadfa5365df9386ee0ca69c6cce9fc3f"
+      },
+      {
+        "new_id": "V2-128",
+        "legacy_id": 28,
+        "game": "崩坏：星穹铁道",
+        "character": "星期日",
+        "title": "星期日的发条鸽子早会",
+        "legacy_record_sha256": "eb01858fc850d30bd6850f0c75a3b4aa2141dbc2f09c5a4e115fdcacd28d2885"
+      },
+      {
+        "new_id": "V2-129",
+        "legacy_id": 29,
+        "game": "崩坏：星穹铁道",
+        "character": "黄泉",
+        "title": "黄泉的雨伞带错了路",
+        "legacy_record_sha256": "e0505eef417bfc8c96214849f273e85f2bff8f0b3bcedf51fb56d503c2408a09"
+      },
+      {
+        "new_id": "V2-130",
+        "legacy_id": 30,
+        "game": "崩坏：星穹铁道",
+        "character": "黑天鹅",
+        "title": "黑天鹅的肥皂泡记忆馆",
+        "legacy_record_sha256": "90a10b6e380cb2bd9820ba2e955b28ba8bbd53c0b84bf6610b01baafcc0d4aa5"
+      },
+      {
+        "new_id": "V2-131",
+        "legacy_id": 31,
+        "game": "崩坏：星穹铁道",
+        "character": "花火",
+        "title": "花火的面具轮盘",
+        "legacy_record_sha256": "c8c2a5708e5b9a41b01bbb602644e63f82f0f1f318fd80d6735e13a51719c8be"
+      },
+      {
+        "new_id": "V2-132",
+        "legacy_id": 32,
+        "game": "崩坏：星穹铁道",
+        "character": "景元",
+        "title": "景元的狮子抱枕占了棋盘",
+        "legacy_record_sha256": "b232d029a874e73feed59aa88a1fb9aeeb8e951d56a209a8ad460645c62b73c3"
+      },
+      {
+        "new_id": "V2-133",
+        "legacy_id": 33,
+        "game": "崩坏：星穹铁道",
+        "character": "符玄",
+        "title": "符玄的幸运饼干提前剧透",
+        "legacy_record_sha256": "d3dc3b0614155880485a11a41997b1b51332b36b97cf57a57cd2e5656bc387a2"
+      },
+      {
+        "new_id": "V2-134",
+        "legacy_id": 34,
+        "game": "崩坏：星穹铁道",
+        "character": "青雀",
+        "title": "青雀的麻将扫地机",
+        "legacy_record_sha256": "047689c96cfdbd51d689975343cae0b54d29050507ad537114c15521a9462f8a"
+      },
+      {
+        "new_id": "V2-135",
+        "legacy_id": 35,
+        "game": "崩坏：星穹铁道",
+        "character": "阮·梅",
+        "title": "阮·梅的蛋糕长出小触角",
+        "legacy_record_sha256": "594baec9f2e245ad6478884fa1e51eba836d002a48833188a2314097a1d8b9b1"
+      },
+      {
+        "new_id": "V2-136",
+        "legacy_id": 36,
+        "game": "崩坏：星穹铁道",
+        "character": "真理医生",
+        "title": "真理医生给橡皮鸭上课",
+        "legacy_record_sha256": "c2f40a911689e77059dec6ed67fd3e4ec8553af981132c43d7c1bf4ddefac44b"
+      },
+      {
+        "new_id": "V2-137",
+        "legacy_id": 37,
+        "game": "崩坏：星穹铁道",
+        "character": "波提欧",
+        "title": "波提欧的瓶盖决斗",
+        "legacy_record_sha256": "699e56443f5f7376c48745f6226f40b89f472ee6ab14b7455c9727ef62dee1df"
+      },
+      {
+        "new_id": "V2-138",
+        "legacy_id": 38,
+        "game": "崩坏：星穹铁道",
+        "character": "托帕&账账",
+        "title": "账账把存钱罐审计空了",
+        "legacy_record_sha256": "22dfc5dbda40ee5fb9456e510a68a0db87e44deba67024a485f684a03c5a64a6"
+      },
+      {
+        "new_id": "V2-139",
+        "legacy_id": 39,
+        "game": "崩坏：星穹铁道",
+        "character": "黑塔",
+        "title": "黑塔人偶架集体转身",
+        "legacy_record_sha256": "f64f937ee311f7f3c8c2d4fb6855b153b575f59a9811d96e0c4504bf569f3c96"
+      },
+      {
+        "new_id": "V2-140",
+        "legacy_id": 40,
+        "game": "崩坏：星穹铁道",
+        "character": "丹恒",
+        "title": "丹恒的龙形书签漏水了",
+        "legacy_record_sha256": "46b0502fb41c14715b2813fec4132594889b8fab403d6a7a6e61e0317c09e603"
+      },
+      {
+        "new_id": "V2-141",
+        "legacy_id": 41,
+        "game": "绝区零",
+        "character": "艾莲",
+        "title": "别拉鲨鱼艾莲的尾巴",
+        "legacy_record_sha256": "ff7018c440df4d27ab90c811de7bd1bdd65c588d5b79c8da5df4fa05393fc74d"
+      },
+      {
+        "new_id": "V2-142",
+        "legacy_id": 42,
+        "game": "绝区零",
+        "character": "星见雅",
+        "title": "星见雅的狐狸雪景球",
+        "legacy_record_sha256": "bd913582a76c961c7184a4a37278139f4bdf73286b3d001bb4658ed8ad0cd1a2"
+      },
+      {
+        "new_id": "V2-143",
+        "legacy_id": 43,
+        "game": "绝区零",
+        "character": "安比",
+        "title": "安比用薯条练剑",
+        "legacy_record_sha256": "034df0ceec03c0ce95b3158e89c86b42a81981d1bef9b3ac656704871618f8e1"
+      },
+      {
+        "new_id": "V2-144",
+        "legacy_id": 44,
+        "game": "绝区零",
+        "character": "妮可",
+        "title": "妮可的娃娃屋催债日",
+        "legacy_record_sha256": "fb7ad6411d2decda4622aded51ad25d6276cabef3aa63de5ae5c6e9f34341142"
+      },
+      {
+        "new_id": "V2-145",
+        "legacy_id": 45,
+        "game": "绝区零",
+        "character": "比利",
+        "title": "比利的动作人偶停不下来",
+        "legacy_record_sha256": "b68c5e8d1d6d98fc2b8a700b2189079e1c6df418635a085ba9108cb5c6840640"
+      },
+      {
+        "new_id": "V2-146",
+        "legacy_id": 46,
+        "game": "绝区零",
+        "character": "猫又",
+        "title": "猫又偷饼干反被罐子抓住",
+        "legacy_record_sha256": "4e1e487362dd686472496173486ed25fd2060b1538e215e1cdda676f20a07a48"
+      },
+      {
+        "new_id": "V2-147",
+        "legacy_id": 47,
+        "game": "绝区零",
+        "character": "莱卡恩",
+        "title": "莱卡恩和不服管的吸尘器",
+        "legacy_record_sha256": "325c5b413ee89de9f493dbae2694516e6b144b6037832628b4d5e92b79f7613b"
+      },
+      {
+        "new_id": "V2-148",
+        "legacy_id": 48,
+        "game": "绝区零",
+        "character": "柏妮思",
+        "title": "柏妮思的汽水火山",
+        "legacy_record_sha256": "bdadd805417ccced977368158ef6f925c85fb0a1ca0f243f1523d8c478ae8102"
+      },
+      {
+        "new_id": "V2-149",
+        "legacy_id": 49,
+        "game": "绝区零",
+        "character": "凯撒",
+        "title": "凯撒的头盔里住了只仓鼠",
+        "legacy_record_sha256": "61e603842737440c2879af2cba8830d73689dc28fe6abfe3352599c6df521868"
+      },
+      {
+        "new_id": "V2-150",
+        "legacy_id": 50,
+        "game": "绝区零",
+        "character": "简·杜",
+        "title": "简的尾巴陷阱反抓自己",
+        "legacy_record_sha256": "a77a8797b2aa04efc1f70a7781ee9a632ab96a0ab0053b8edf9f8e4175bc8152"
+      },
+      {
+        "new_id": "V2-151",
+        "legacy_id": 51,
+        "game": "绝区零",
+        "character": "青衣",
+        "title": "青衣把茶壶当充电座",
+        "legacy_record_sha256": "6affc4ce5eb8afc500bd20c1f436886126e3f6e51d2cb6c92653a50d15c0b867"
+      },
+      {
+        "new_id": "V2-152",
+        "legacy_id": 52,
+        "game": "绝区零",
+        "character": "朱鸢",
+        "title": "朱鸢的文件堡垒突围",
+        "legacy_record_sha256": "40a5fd02cd8fbe6d14f7b23cf634b71c5f1cb645dd35a9bdba1c699166d88b61"
+      },
+      {
+        "new_id": "V2-153",
+        "legacy_id": 53,
+        "game": "绝区零",
+        "character": "格莉丝",
+        "title": "格莉丝把烤面包机升级成挖掘机",
+        "legacy_record_sha256": "7599a7ab4e01f80a3fad04b6bfd63e650f3a6072afc344c45ae0617cbce07873"
+      },
+      {
+        "new_id": "V2-154",
+        "legacy_id": 54,
+        "game": "绝区零",
+        "character": "珂蕾妲",
+        "title": "珂蕾妲的积木城停工危机",
+        "legacy_record_sha256": "c72fc4a4ea5c430d422aeb18b0a8097ea58f0f4692ea9b1209e094d0f5b15983"
+      },
+      {
+        "new_id": "V2-155",
+        "legacy_id": 55,
+        "game": "绝区零",
+        "character": "丽娜",
+        "title": "丽娜的漂浮人偶抢着做早餐",
+        "legacy_record_sha256": "b0a63069c38bd5a72b280a5db92e8e4e6644e15976a69b4cea6ff59f07b76dbb"
+      },
+      {
+        "new_id": "V2-156",
+        "legacy_id": 56,
+        "game": "绝区零",
+        "character": "莱特",
+        "title": "莱特的火柴盒拳击场",
+        "legacy_record_sha256": "e00e41350c19d9c09388108025ad2504c059150c9543d9e5b1c4bb30fd2347e0"
+      },
+      {
+        "new_id": "V2-157",
+        "legacy_id": 57,
+        "game": "绝区零",
+        "character": "月城柳",
+        "title": "月城柳的日历每天多一页",
+        "legacy_record_sha256": "f2654c8b21dd230726c34a4f0ab800c915889a90cd10a2b8a6e82322d1206eff"
+      },
+      {
+        "new_id": "V2-158",
+        "legacy_id": 58,
+        "game": "绝区零",
+        "character": "浅羽悠真",
+        "title": "浅羽悠真的橡皮筋射箭",
+        "legacy_record_sha256": "74bd579e001e2251b791bb564e6c67b8f9c35f8f684faac37dc72dfda92dd879"
+      },
+      {
+        "new_id": "V2-159",
+        "legacy_id": 59,
+        "game": "绝区零",
+        "character": "耀嘉音",
+        "title": "耀嘉音的卡拉OK音乐盒",
+        "legacy_record_sha256": "f67d15c1ff15664b5b0293fe9a90682439f2d4bc71c407feac73847e134ed038"
+      },
+      {
+        "new_id": "V2-160",
+        "legacy_id": 60,
+        "game": "绝区零",
+        "character": "伊芙琳",
+        "title": "伊芙琳的客厅安全演习",
+        "legacy_record_sha256": "59a1b8cc770a6e7bb8f0a97ea8ec00799159b521439875461f7316960c121a37"
+      },
+      {
+        "new_id": "V2-161",
+        "legacy_id": 61,
+        "game": "明日方舟：终末地",
+        "character": "管理员",
+        "title": "管理员的世界重启闹钟",
+        "legacy_record_sha256": "42ab79adf683f444e11bfefa78a17bfea52bd5a6c0c64ce31ff158660fed72e7"
+      },
+      {
+        "new_id": "V2-162",
+        "legacy_id": 62,
+        "game": "明日方舟：终末地",
+        "character": "佩丽卡",
+        "title": "佩丽卡的夹板在指挥谁",
+        "legacy_record_sha256": "ad7639e6ecfee36194c769edc13b88b108c51121aa2aae350e490ea1e1c1ec13"
+      },
+      {
+        "new_id": "V2-163",
+        "legacy_id": 63,
+        "game": "明日方舟：终末地",
+        "character": "陈千语",
+        "title": "陈千语的娃娃机救援",
+        "legacy_record_sha256": "3d959551169f89d40213d4168cb058a887a228af529f9047bfa89280485a8c31"
+      },
+      {
+        "new_id": "V2-164",
+        "legacy_id": 64,
+        "game": "明日方舟：终末地",
+        "character": "狼卫",
+        "title": "狼卫的披风偷走了暖气",
+        "legacy_record_sha256": "e455244884068ad088a9c3965c37b2c072020bf5cf070251c47343501f325f47"
+      },
+      {
+        "new_id": "V2-165",
+        "legacy_id": 65,
+        "game": "明日方舟：终末地",
+        "character": "余烬",
+        "title": "余烬守护一壶快烧开的水",
+        "legacy_record_sha256": "1966c1896f2411fd0b1de76b451c63f4ae8b973141b12d1b991346f2d2812799"
+      },
+      {
+        "new_id": "V2-166",
+        "legacy_id": 66,
+        "game": "明日方舟：终末地",
+        "character": "伊冯",
+        "title": "伊冯的冰箱伏击失败",
+        "legacy_record_sha256": "66a4313ba2833d99bf4be0b16118cbf9044288b28fe45a62f87e938b5158a343"
+      },
+      {
+        "new_id": "V2-167",
+        "legacy_id": 67,
+        "game": "明日方舟：终末地",
+        "character": "洁尔佩塔",
+        "title": "洁尔佩塔的包裹分拣暴走",
+        "legacy_record_sha256": "967dcae25ad8423b7a90daf4e436ba221c3f004441018fd7bab0c121ac2dc812"
+      },
+      {
+        "new_id": "V2-168",
+        "legacy_id": 68,
+        "game": "明日方舟：终末地",
+        "character": "莱万汀",
+        "title": "莱万汀的平底锅指挥权",
+        "legacy_record_sha256": "36a710549e964619a516c37da70f542d9ddfc0dad98ea3d7d23469e9b154958f"
+      },
+      {
+        "new_id": "V2-169",
+        "legacy_id": 69,
+        "game": "明日方舟：终末地",
+        "character": "艾维文娜",
+        "title": "艾维文娜的闪电旋转木马",
+        "legacy_record_sha256": "b751343af46e6bf6bace79b7b91b8c19b2a613cc6b2d910488fa858197085575"
+      },
+      {
+        "new_id": "V2-170",
+        "legacy_id": 70,
+        "game": "明日方舟：终末地",
+        "character": "昼雪",
+        "title": "昼雪的雪景球急诊",
+        "legacy_record_sha256": "00495cc19332a0778af616b6df2da703dccb866b5814a66e9cb7cf145c8aa4f8"
+      },
+      {
+        "new_id": "V2-171",
+        "legacy_id": 71,
+        "game": "明日方舟：终末地",
+        "character": "大潘",
+        "title": "大潘的竹筒快递机器人",
+        "legacy_record_sha256": "e1cf70403d1c2ac4a195919902b944369d5d9aca37083bbc442e660291623e2f"
+      },
+      {
+        "new_id": "V2-172",
+        "legacy_id": 72,
+        "game": "明日方舟：终末地",
+        "character": "秋栗",
+        "title": "秋栗的栗子自动售货机",
+        "legacy_record_sha256": "90520ee0c7a8b51407b4f4750d36a1540618fdb765c87f560fd718c54b5d3929"
+      },
+      {
+        "new_id": "V2-173",
+        "legacy_id": 73,
+        "game": "明日方舟：终末地",
+        "character": "弧光",
+        "title": "弧光把台灯充成了小太阳",
+        "legacy_record_sha256": "2f174325081738f249d4fa9f4466d645c5732b451b9ff2bf1513aeb774aee5f6"
+      },
+      {
+        "new_id": "V2-174",
+        "legacy_id": 74,
+        "game": "明日方舟：终末地",
+        "character": "卡契尔",
+        "title": "卡契尔的盾牌只想当雨伞",
+        "legacy_record_sha256": "0675834d6a2921a23bae430bc14d2b97870208492ddf1f571bc9b52af22b51f8"
+      },
+      {
+        "new_id": "V2-175",
+        "legacy_id": 75,
+        "game": "明日方舟：终末地",
+        "character": "骏卫",
+        "title": "骏卫的机械马不会侧方停车",
+        "legacy_record_sha256": "ac86cf9c39c3911d3f5d05c55013a7a9d6bc7f47cc994609381a65620f0bd3b7"
+      },
+      {
+        "new_id": "V2-176",
+        "legacy_id": 76,
+        "game": "异环",
+        "character": "娜娜莉",
+        "title": "不要摸小企鹅娜娜莉的尾巴",
+        "legacy_record_sha256": "7f5dfba0ee9f25aa84316e36f5881ed93b1ef93cbc36c62f2942bca161bf3421"
+      },
+      {
+        "new_id": "V2-177",
+        "legacy_id": 77,
+        "game": "异环",
+        "character": "薄荷",
+        "title": "薄荷的零食地图开始导航",
+        "legacy_record_sha256": "e7a8d18c07caf677048b1eb3af35e06343cbef1538063b1d147242aca081e436"
+      },
+      {
+        "new_id": "V2-178",
+        "legacy_id": 78,
+        "game": "异环",
+        "character": "早雾",
+        "title": "早雾禁止打开冰箱第三层",
+        "legacy_record_sha256": "64b02ab2fb10415aafdfcafa5c9a2baafbf0055eeb9d4c6e5fbede4a1494d9f0"
+      },
+      {
+        "new_id": "V2-179",
+        "legacy_id": 79,
+        "game": "异环",
+        "character": "安魂曲",
+        "title": "安魂曲的番茄城堡保卫战",
+        "legacy_record_sha256": "37d3578cc371c2c3f1ffeea5c87dfb33dde9d399ddd576ca4bb137f0ec08d234"
+      },
+      {
+        "new_id": "V2-180",
+        "legacy_id": 80,
+        "game": "异环",
+        "character": "塔吉多",
+        "title": "塔吉多修好一只不想好的玩偶",
+        "legacy_record_sha256": "e4b08796c6d1f5c80ec6d46ce809d3916b4240d9fb7a44d0df64a95b0795683e"
+      },
+      {
+        "new_id": "V2-181",
+        "legacy_id": 81,
+        "game": "异环",
+        "character": "异能者·零",
+        "title": "零号异常自动售货机",
+        "legacy_record_sha256": "c3b1035efef37a6a84ae69007fb4609b7076e5666e642025025d7663d79e6cc4"
+      },
+      {
+        "new_id": "V2-182",
+        "legacy_id": 82,
+        "game": "异环",
+        "character": "浔",
+        "title": "浔收藏的古铃不肯安静",
+        "legacy_record_sha256": "fba2253e21b3cd78808d8bbc1c1e029498adbc966a5a302cd06982d63215c60e"
+      },
+      {
+        "new_id": "V2-183",
+        "legacy_id": 83,
+        "game": "异环",
+        "character": "真红",
+        "title": "真红的扫帚拒绝直线飞行",
+        "legacy_record_sha256": "111aa5bb86c0a63e7c80fbe321bd2d464da1daa3c3c3812d15792cbe23cfaa5a"
+      },
+      {
+        "new_id": "V2-184",
+        "legacy_id": 84,
+        "game": "异环",
+        "character": "伊洛伊",
+        "title": "伊洛伊的魔术帽开错了门",
+        "legacy_record_sha256": "6e706b4c740f6f582ad1ea043ae83379d9bf84d3b541d98ca1400df5205369bf"
+      },
+      {
+        "new_id": "V2-185",
+        "legacy_id": 85,
+        "game": "异环",
+        "character": "残虹",
+        "title": "残虹和会复制动作的影子",
+        "legacy_record_sha256": "bfac86442d3425e6ccefe2f59baebbef36eed592cf0ffe4eca3e0e431bb74d4d"
+      },
+      {
+        "new_id": "V2-186",
+        "legacy_id": 86,
+        "game": "异环",
+        "character": "九原",
+        "title": "九原把火锅当成天气系统",
+        "legacy_record_sha256": "3488b0eca00238e298f7b28be87fc4f6de0caedf7050fc6bf98399ade5c2ad32"
+      },
+      {
+        "new_id": "V2-187",
+        "legacy_id": 87,
+        "game": "异环",
+        "character": "卡厄斯",
+        "title": "卡厄斯的咖啡机只出面具",
+        "legacy_record_sha256": "2416edc0e0e51d4fdb5521fc19bf00dafc5ecc18bdc6e4f3a775567ebf180606"
+      },
+      {
+        "new_id": "V2-188",
+        "legacy_id": 88,
+        "game": "异环",
+        "character": "埃德嘉",
+        "title": "埃德嘉的雨伞叫来一辆杯子车",
+        "legacy_record_sha256": "364ed18b7c92eba407d43f8b34b4bed2f6f43edd335d82e442280a8c9cbcdb9f"
+      },
+      {
+        "new_id": "V2-189",
+        "legacy_id": 89,
+        "game": "异环",
+        "character": "哈尼娅",
+        "title": "哈尼娅的绵羊直升机配送",
+        "legacy_record_sha256": "83339512890e9217d13a99fa6ea14cb517a6ef089c3f3998311a4e66282f4dea"
+      },
+      {
+        "new_id": "V2-190",
+        "legacy_id": 90,
+        "game": "异环",
+        "character": "海月",
+        "title": "海月的月亮水母夜灯",
+        "legacy_record_sha256": "3f280b16a66244786e56fd29bb7ddf7793b5420669c32feb73a4c314366e4c7c"
+      },
+      {
+        "new_id": "V2-191",
+        "legacy_id": 97,
+        "game": "场景创意",
+        "character": "枫丹歌剧院微缩城",
+        "title": "歌剧院下班后开始散步",
+        "legacy_record_sha256": "e2b6db52e9dec773a766192db9af695c19b5591f6ee921b3bb09a87be1fcbcfe"
+      },
+      {
+        "new_id": "V2-192",
+        "legacy_id": 98,
+        "game": "场景创意",
+        "character": "星穹列车微缩模型",
+        "title": "列车开进了洗衣机星海",
+        "legacy_record_sha256": "33017a205699b5f93c1fd0e567b1a57c9e30b71e8864156f66ff1679b532c6ee"
+      },
+      {
+        "new_id": "V2-193",
+        "legacy_id": 99,
+        "game": "场景创意",
+        "character": "录像店磁带小怪",
+        "title": "午夜录像带从货架集体越狱",
+        "legacy_record_sha256": "934eed8b4879aae8ce4e1354e21d0ebd513e1d5e090356976171ce0407247a9b"
+      },
+      {
+        "new_id": "V2-194",
+        "legacy_id": 100,
+        "game": "场景创意",
+        "character": "五城桌面夜景",
+        "title": "五座游戏城在桌上争一轮月亮",
+        "legacy_record_sha256": "aa34c86acf08faad8bea160e8a01f84f7876683b3f5b80ceb89c4daa7dd4c043"
+      }
+    ]
+  }
+}

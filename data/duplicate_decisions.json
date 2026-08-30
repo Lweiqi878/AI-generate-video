@@ -1,0 +1,54 @@
+{
+  "V2-008|V2-123": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者是60秒便当盒逃亡与看星海，后者是10秒饭团机甲递勺并敬礼；共同道具相同，叙事目标和节拍不同。"
+  },
+  "V2-024|V2-146": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者由影子提前暴露偷窃，后者由饼干罐卡手触发逃跑；冲突主体和结局机制不同。"
+  },
+  "V2-017|V2-138": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者是吞信用卡后膨胀成存钱罐巨兽，后者是吞硬币后按面额吐回；视觉升级和回报不同。"
+  },
+  "V2-048|V2-176": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者把尾巴设为整座城市的急停杆，后者是被触碰尾巴后的边界感追逐喜剧；世界机制不同。"
+  },
+  "V2-025|V2-141": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者是鲨鱼尾巴与扫地机器人的自主对峙，后者是画外手触碰尾巴后被卷入毛毯；对手和动作链不同。"
+  },
+  "V2-050|V2-177": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者是10秒包装油光地图与薯片拼门，后者是60秒零食地图寻宝和生日点心反转；规模与因果不同。"
+  },
+  "V2-030|V2-148": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者由单杯汽水生成果冻火龙，后者是整排汽水连锁喷发并汇成杯塔；核心视觉回报不同。"
+  },
+  "V2-047|V2-181": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者售卖昨日遗憾并要求放下过去，后者售卖不同尺寸的空间门；主题、物件与结局不同。"
+  },
+  "V2-043|V2-163": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者在娃娃机外操纵抓手救机器人，后者角色本人被困在娃娃机内自救；视角与被救主体相反。"
+  },
+  "V2-032|V2-142": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者是雪景球预演未来刀路的时间因果故事，后者是角色在球内排列雪花的单一魔法动作。"
+  },
+  "V2-006|V2-107": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者审理融化冰淇淋且陪审水獭偷吃证物，后者在浴缸审理逃跑橡皮鸭；地点、证物与笑点不同。"
+  },
+  "V2-029|V2-149": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者是头盔孵化机械幼龙的六段冒险，后者是头盔内仓鼠按喇叭的10秒笑点；主体和规模不同。"
+  },
+  "V2-007|V2-121": {
+    "decision": "keep_distinct_reviewed",
+    "rationale": "前者是预知照片导致自我实现，后者是相机长脚抢镜并拍出合照；相机仅为共同道具。"
+  }
+}

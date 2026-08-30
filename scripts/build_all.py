@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compile the 100-work slate into Image 2 prompts, MiniMax H3 Ref2VA packs,
+"""Compile the 194-work slate into Image 2 prompts, MiniMax H3 Ref2VA packs,
 CSV manifests, JSON, Markdown and a self-contained offline browser.
 
 No third-party Python packages are required.
@@ -21,6 +21,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SLATE_DIR = ROOT / "data" / "slates"
 OUT = ROOT / "generated"
 EXCLUDED = {"鸣潮", "明日方舟", "崩坏3", "第五人格"}
+EXPECTED_WORKS = 194
+CATALOG_FILENAME = f"ALL_{EXPECTED_WORKS}.md"
 REQUIRED = {
     "id", "game", "character", "mode", "title", "form", "scene", "hook",
     "beats", "payoff", "dialogue", "sound", "loop", "camera", "priority",
@@ -52,15 +54,15 @@ def load_works() -> list[dict[str, Any]]:
 
 def validate_works(works: list[dict[str, Any]]) -> list[str]:
     errors: list[str] = []
-    if len(works) != 100:
-        errors.append(f"Expected exactly 100 works, found {len(works)}")
+    if len(works) != EXPECTED_WORKS:
+        errors.append(f"Expected exactly {EXPECTED_WORKS} works, found {len(works)}")
 
     ids = [w.get("id") for w in works]
     duplicates = [k for k, v in Counter(ids).items() if v > 1]
     if duplicates:
         errors.append(f"Duplicate ids: {duplicates}")
 
-    expected_ids = [f"V2-{i:03d}" for i in range(1, 101)]
+    expected_ids = [f"V2-{i:03d}" for i in range(1, EXPECTED_WORKS + 1)]
     if ids != expected_ids:
         missing = sorted(set(expected_ids) - set(ids))
         extra = sorted(set(ids) - set(expected_ids))
@@ -326,7 +328,7 @@ def write_prompts(works: list[dict[str, Any]]) -> None:
 
 def write_all_catalog(works: list[dict[str, Any]]) -> None:
     index = [
-        "# AI Generate Video V2｜100案完整目录",
+        f"# AI Generate Video V2｜{EXPECTED_WORKS}案完整目录",
         "",
         "本文件由 `scripts/build_all.py` 自动生成。每案含Image 2 R2/R3提示词与MiniMax H3全部10秒段提示词。",
         "",
@@ -334,7 +336,42 @@ def write_all_catalog(works: list[dict[str, Any]]) -> None:
     for w in works:
         index.append(work_markdown(w))
         index.append("\n---\n")
-    (OUT / "catalog" / "ALL_100.md").write_text("\n".join(index), encoding="utf-8")
+    (OUT / "catalog" / CATALOG_FILENAME).write_text("\n".join(index), encoding="utf-8")
+
+
+def write_source_index(works: list[dict[str, Any]]) -> None:
+    """Keep a compact, tracked index next to the source slates."""
+    games = Counter(w["game"] for w in works)
+    modes = Counter(w["mode"] for w in works)
+    github_count = sum(int(w["id"].split("-")[-1]) <= 100 for w in works)
+    local_count = len(works) - github_count
+    lines = [
+        f"# V2 作品索引｜{len(works)}案",
+        "",
+        f"- GitHub主线：**{github_count}**",
+        f"- 本地保留并入：**{local_count}**",
+        f"- 10秒作品：**{modes['10s']}**",
+        f"- 60秒作品：**{modes['60s']}**",
+        f"- H3十秒生成单元：**{sum(segment_count(w) for w in works)}**",
+        "",
+        "重复审计见 [`docs/DUPLICATE_AUDIT.md`](../docs/DUPLICATE_AUDIT.md)，来源映射见 [`data/merge_manifest.json`](../data/merge_manifest.json)。",
+        "",
+        "## 游戏/方向分布",
+        "",
+        "| 游戏/方向 | 数量 |",
+        "|---|---:|",
+    ]
+    lines.extend(f"| {game} | {count} |" for game, count in games.most_common())
+    lines += ["", "## 全部作品", "", "| ID | 来源 | 游戏/方向 | 角色/主体 | 时长 | 标题 |", "|---|---|---|---|---:|---|"]
+    for work in works:
+        number = int(work["id"].split("-")[-1])
+        source = "GitHub" if number <= 100 else "本地保留"
+        lines.append(
+            f"| {work['id']} | {source} | {work['game']} | {work['character']} | "
+            f"{work['mode']} | {work['title']} |"
+        )
+    (ROOT / "catalog").mkdir(parents=True, exist_ok=True)
+    (ROOT / "catalog" / "INDEX.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def write_json(works: list[dict[str, Any]]) -> None:
@@ -366,7 +403,7 @@ def write_site(works: list[dict[str, Any]]) -> None:
 <style>
 :root{font-family:Inter,"Microsoft YaHei",sans-serif;color:#171717;background:#f4f5f7}*{box-sizing:border-box}body{margin:0}header{position:sticky;top:0;z-index:5;background:#111;color:#fff;padding:18px 5vw;box-shadow:0 2px 16px #0003}h1{margin:0 0 8px;font-size:clamp(22px,3vw,38px)}.sub{color:#bbb}.bar{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;margin-top:14px}input,select{width:100%;padding:11px;border:1px solid #555;border-radius:10px;background:#222;color:#fff}main{padding:24px 5vw 80px}.count{margin-bottom:16px;color:#555}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px}.card{background:#fff;border:1px solid #e2e2e2;border-radius:18px;padding:18px;box-shadow:0 8px 28px #0000000d}.meta{display:flex;gap:8px;flex-wrap:wrap}.pill{font-size:12px;background:#eee;border-radius:999px;padding:5px 9px}.card h2{font-size:20px;margin:12px 0 6px}.character{color:#666}.hook{line-height:1.7}.buttons{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}button{border:0;border-radius:9px;padding:9px 12px;cursor:pointer;background:#111;color:#fff}.secondary{background:#e9e9e9;color:#111}dialog{width:min(960px,94vw);max-height:90vh;border:0;border-radius:16px;padding:0;box-shadow:0 20px 80px #0007}dialog::backdrop{background:#0008}.modal-head{position:sticky;top:0;background:#fff;padding:16px 20px;border-bottom:1px solid #ddd;display:flex;justify-content:space-between;gap:12px}.modal-body{padding:20px;white-space:pre-wrap;line-height:1.65}.close{background:#eee;color:#111}.empty{padding:60px;text-align:center;color:#777}@media(max-width:700px){.bar{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
 </style></head><body>
-<header><h1>AI Generate Video V2</h1><div class="sub">100案｜Image 2 R2/R3｜MiniMax H3 Ref2VA｜离线可检索</div><div class="bar"><input id="q" placeholder="搜索标题、角色、游戏、标签"><select id="game"><option value="">全部游戏</option></select><select id="mode"><option value="">全部时长</option><option>10s</option><option>60s</option></select></div></header>
+<header><h1>AI Generate Video V2</h1><div class="sub">194案｜Image 2 R2/R3｜MiniMax H3 Ref2VA｜离线可检索</div><div class="bar"><input id="q" placeholder="搜索标题、角色、游戏、标签"><select id="game"><option value="">全部游戏</option></select><select id="mode"><option value="">全部时长</option><option>10s</option><option>60s</option></select></div></header>
 <main><div id="count" class="count"></div><div id="grid" class="grid"></div></main>
 <dialog id="dlg"><div class="modal-head"><strong id="dlgTitle"></strong><button class="close" onclick="dlg.close()">关闭</button></div><div id="dlgBody" class="modal-body"></div></dialog>
 <script>const works=__DATA__;const q=document.querySelector('#q'),game=document.querySelector('#game'),mode=document.querySelector('#mode'),grid=document.querySelector('#grid'),count=document.querySelector('#count'),dlg=document.querySelector('#dlg'),dlgTitle=document.querySelector('#dlgTitle'),dlgBody=document.querySelector('#dlgBody');[...new Set(works.map(x=>x.game))].sort().forEach(x=>game.add(new Option(x,x)));function show(title,text){dlgTitle.textContent=title;dlgBody.textContent=text;dlg.showModal()}function copy(text){navigator.clipboard.writeText(text).then(()=>alert('已复制'))}function render(){const key=q.value.trim().toLowerCase();const rows=works.filter(x=>(!game.value||x.game===game.value)&&(!mode.value||x.mode===mode.value)&&(!key||JSON.stringify(x).toLowerCase().includes(key)));count.textContent=`显示 ${rows.length} / ${works.length} 案`;grid.innerHTML=rows.map((x,i)=>`<article class="card"><div class="meta"><span class="pill">${x.id}</span><span class="pill">${x.game}</span><span class="pill">${x.mode}</span><span class="pill">${x.priority}/${x.risk}</span></div><h2>${x.title}</h2><div class="character">${x.character}</div><p class="hook"><b>钩子：</b>${x.hook}</p><p class="hook"><b>反转：</b>${x.payoff}</p><div class="buttons"><button onclick="show('${x.id} R2',works[${works.indexOf(x)}].r2)">R2提示词</button><button onclick="show('${x.id} R3',works[${works.indexOf(x)}].r3)">R3提示词</button><button onclick="show('${x.id} H3',works[${works.indexOf(x)}].h3.join('\n\n===== NEXT SEGMENT =====\n\n'))">H3提示词</button><button class="secondary" onclick="copy(works[${works.indexOf(x)}].h3[0])">复制首段</button></div></article>`).join('')||'<div class="empty">没有匹配项目</div>'}q.oninput=game.onchange=mode.onchange=render;render();</script></body></html>'''
@@ -404,6 +441,7 @@ def main(argv: Iterable[str] | None = None) -> int:
     write_manifest(works)
     write_prompts(works)
     write_all_catalog(works)
+    write_source_index(works)
     write_json(works)
     write_site(works)
     print_summary(works)

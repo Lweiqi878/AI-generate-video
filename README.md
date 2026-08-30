@@ -1,108 +1,85 @@
-# AI Generate Video｜MiniMax H3 短视频生产体系
+# AI Generate Video｜194案 MiniMax H3 短视频生产库
 
-> 版本：`v2.0.0-anchor`  
-> 进度锚点：2026-08-30  
-> 目标：把“原角色图 → Image 2 造型参考图/首帧 → MiniMax H3 10 秒镜头 → 60 秒连续故事 → B站/抖音/小红书发布”做成可复用、可校验、可持续扩展的本地生产线。
+这是把 [GitHub 原100案](https://github.com/Lweiqi878/AI-generate-video) 与本地旧目录中合规保留的94案合并后的可执行版本。四个明确排除项——`鸣潮`、`明日方舟`本体、`崩坏3`、`第五人格`——不进入最终目录；`明日方舟：终末地`作为独立作品方向保留。
 
-## 本轮结论
+## 合并结果
 
-- 新建 **100 个全新作品方案**，不沿用旧版故事。
-- 主选题池不再包含：**鸣潮、明日方舟、崩坏3、第五人格**。
-- 原神常规角色占比显著下调，合并为“原神／千星奇域”小规模实验组。
-- 新增重点方向：**无限暖暖、恋与深空、蛋仔派对、燕云十六声、逆水寒手游、王者荣耀**。
-- 每个作品由结构化源数据驱动，可在本地批量生成 Image 2 提示词、H3 Ref2VA 提示词、镜头任务单、CSV、静态网页和 FFmpeg 拼接清单。
-- 仓库只保存提示词、脚本和来源清单，不重新分发游戏官方立绘或第三方画师图片。
-
-## 100 案分布
-
-| 方向 | 数量 |
+| 指标 | 数量 |
 |---|---:|
-| 原神／千星奇域 | 6 |
-| 崩坏：星穹铁道 | 14 |
-| 绝区零 | 14 |
-| 明日方舟：终末地 | 12 |
-| 异环 | 10 |
-| 无限暖暖 | 10 |
-| 恋与深空 | 8 |
-| 蛋仔派对 | 8 |
-| 燕云十六声 | 6 |
-| 逆水寒手游 | 6 |
-| 王者荣耀 | 6 |
-| **总计** | **100** |
+| GitHub主线 | 100 |
+| 本地输入 | 100 |
+| 本地排除 | 6 |
+| 本地保留 | 94 |
+| **最终作品** | **194** |
 
-## 目录
+- ID连续为 `V2-001`–`V2-194`。
+- 完全重复记录：0；规范化标题重复：0。
+- 同角色、同道具或同题材的近似项只进入人工复核，不在证据不足时自动误删。
+- 详细映射见 [`data/merge_manifest.json`](data/merge_manifest.json)，重复检查见 [`docs/DUPLICATE_AUDIT.md`](docs/DUPLICATE_AUDIT.md)。
 
-```text
-AI-generate-video/
-├─ data/
-│  ├─ slates/                 # 100案结构化源数据，分4卷
-│  ├─ incentive_candidates.json
-│  └─ schema/work.schema.json
-├─ catalog/
-│  └─ INDEX.md                # 100案快速索引
-├─ docs/
-│  ├─ WORKFLOW.md             # R1/R2/R3/R4生产流程
-│  ├─ H3_PROMPT_SPEC.md       # 按官方Ref2VA结构编译
-│  ├─ INCENTIVE_STRATEGY.md   # 激励候选分层与逐期核验
-│  ├─ REFERENCE_ASSETS.md     # 官方素材查找与选图规范
-│  ├─ QUALITY_GATE.md         # 三轮自检与淘汰规则
-│  └─ COMPLIANCE.md           # AI标识、IP与活动规则边界
-├─ scripts/
-│  ├─ build_all.py            # 一键编译全部提示词与网页
-│  ├─ validate_catalog.py     # 数据与时长校验
-│  ├─ extract_last_frame.py   # 提取R4末帧
-│  └─ concat_segments.py      # 拼接6×10秒故事
-├─ .github/workflows/
-│  └─ validate.yml
-├─ run_build.ps1
-├─ run_build.bat
-└─ README.md
-```
+## 两支完整试片
+
+本仓库包含两支由本地 MiniMax H3 生成并经 FFmpeg 完成包装、字幕、AI标识、音频规范和封面导出的试片：
+
+| 作品 | 成片 | 生成记录 |
+|---|---|---|
+| V2-191《歌剧院下班后开始散步》 | [`deliverables/V2-191-walking-opera/V2-191_final.mp4`](deliverables/V2-191-walking-opera/V2-191_final.mp4) | [`manifest.json`](deliverables/V2-191-walking-opera/manifest.json) |
+| V2-193《午夜录像带从货架集体越狱》 | [`deliverables/V2-193-tape-escape/V2-193_final.mp4`](deliverables/V2-193-tape-escape/V2-193_final.mp4) | [`manifest.json`](deliverables/V2-193-tape-escape/manifest.json) |
+
+最终媒体、提示词、封面和哈希保存在 `deliverables/`；较大的原始生成中间件保留在本地 `production/`，不进入Git历史。
 
 ## 最短使用路径
 
 ```powershell
-# Windows PowerShell
 python .\scripts\validate_catalog.py
+python .\scripts\audit_duplicates.py --check
 python .\scripts\build_all.py
 ```
 
-或直接双击：
-
-```text
-run_build.bat
-```
-
-编译结果写入 `generated/`：
+也可以直接运行 `./run_build.ps1`。构建结果写入：
 
 ```text
 generated/
-├─ catalog/ALL_100.md
+├─ catalog/ALL_194.md
+├─ catalog/works/
 ├─ prompts/image2/
 ├─ prompts/h3/
 ├─ manifests/run_manifest.csv
+├─ works.v2.compiled.json
 └─ site/index.html
 ```
 
-## 每个作品的输入职责
+`generated/` 可完全重建，因此不提交到Git；GitHub Actions会把它上传为短期构建制品。
 
-- **R1 原角色身份图**：只负责脸、发型、瞳色、服装识别点与角色身份。
-- **R2 Image 2 造型图**：负责手办化、动物化、微缩化、材质和全身比例。
-- **R3 Image 2 首帧图**：负责9:16构图、现实/游戏场景、光线、道具位置和接触关系。
-- **R4 上一段末帧**：仅用于60秒作品第2—6段的空间、动作与姿态衔接。
+## 数据组织
 
-冲突优先级：`R4起始姿态 > R1身份 > R2造型 > R3长期场景`。
+```text
+data/slates/
+├─ 01–04_*.jsonl   # GitHub原100案，V2-001–V2-100
+└─ 05–08_*.jsonl   # 本地保留94案，V2-101–V2-194
+```
+
+每案统一包含角色/主体、造型、场景、首秒钩子、剧情节拍、反转、声音、循环、相机、风险、检索式和自检字段。编译器会进一步生成 Image 2 R2/R3 提示词、MiniMax H3 每个10秒生成单元的Ref2VA提示词、离线检索页、CSV任务清单和总目录。
+
+## 重新导入本地94案
+
+仓库已提交转换后的JSONL，日常构建不依赖旧目录。需要核验或重做迁移时：
+
+```powershell
+python .\scripts\import_legacy_catalog.py --source G:\ai-generate-video-game\works.json
+python .\scripts\audit_duplicates.py --check
+python .\scripts\validate_catalog.py
+```
+
+导入器会校验本地输入必须为100案、精确排除6案，并输出确定性的94案与来源哈希。
 
 ## 重要边界
 
-1. “有创作者计划”不等于“本期活动允许AI作品”。仓库中的激励表是**选题决策工具**，不是奖金承诺。
-2. 所有活动在投稿前都要记录官方规则页、截止时间、AI条款、平台和作品时长要求。
-3. 不克隆官方声优声线；对白使用原创短句或后期字幕/自有配音。
-4. 发布时保留并补充AI生成标识；不删除模型或平台写入的溯源信息。
-5. 官方立绘、PV截图和游戏内截图由制作者按授权边界自行取得，仓库只提供检索式和选图标准。
+- 仓库只保存原创脚本、提示词、检索式、工具和两支原创场景试片，不重新分发游戏官方立绘、CG、配音、音乐或第三方画师图片。
+- “存在创作者计划”不代表生成式AI自动有参赛资格；投稿前需重新核对当期规则、AI条款、时长、分辨率与授权范围。
+- 不克隆官方声优声线，不使用官方原声，不暗示官方合作。
+- 发布时保留生成文件的溯源信息，并在画面和投稿说明中明确标注AI生成/AI辅助制作。
 
-## 版本策略
+## 来源与许可
 
-- `main`：可执行、可校验的当前基线。
-- `generated/`：默认由本地电脑编译，可按需要另行提交。
-- 每次扩充先改 `data/slates/*.jsonl`，再运行校验与编译，避免手工维护数百份重复提示词。
+GitHub源仓库：[Lweiqi878/AI-generate-video](https://github.com/Lweiqi878/AI-generate-video)。代码与本仓库原创文字按仓库许可使用；第三方游戏名称、角色、商标、图像、音乐和声音不属于本项目许可范围。

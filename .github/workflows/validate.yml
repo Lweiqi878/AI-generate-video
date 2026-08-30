@@ -1,4 +1,4 @@
-name: Validate and compile V2 catalog
+name: Validate and compile 194-work catalog
 
 # Manual only: GitHub is used as a version anchor, not as the default compute host.
 on:
@@ -14,11 +14,13 @@ jobs:
           python-version: '3.12'
       - name: Validate source data
         run: python scripts/validate_catalog.py
+      - name: Audit duplicates
+        run: python scripts/audit_duplicates.py --check
       - name: Compile prompt packs
         run: python scripts/build_all.py
       - name: Upload compiled text artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ai-generate-video-v2-compiled
+          name: ai-generate-video-194-compiled
           path: generated/
           retention-days: 7
