@@ -1,0 +1,24 @@
+name: Validate and compile V2 catalog
+
+# Manual only: GitHub is used as a version anchor, not as the default compute host.
+on:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate source data
+        run: python scripts/validate_catalog.py
+      - name: Compile prompt packs
+        run: python scripts/build_all.py
+      - name: Upload compiled text artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-generate-video-v2-compiled
+          path: generated/
+          retention-days: 7
