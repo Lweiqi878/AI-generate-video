@@ -1,0 +1,126 @@
+{
+  "release_id": "V2-193",
+  "work_id": "V2-193",
+  "game": "原创动画",
+  "incentive_plan": "B站AI动画创作挑战",
+  "eligibility": "AI动画活动入口可核验；现金赛道、积分赛道、截止时间与版权条件仍须在投稿当天复核。",
+  "campaign_tag_allowed": false,
+  "title": "录像带越狱到一半，老板回来了",
+  "folder": "原创动画__B站AI动画创作挑战__录像带越狱到一半老板回来了",
+  "generation": {
+    "engine": "MiniMax H3 local Studio",
+    "segments": [
+      {
+        "segment": 1,
+        "studio_job_id": "260830-204712-51bf35",
+        "mode": "t2v",
+        "seed": 2026083099,
+        "media": {
+          "path": "production/原创动画__B站AI动画创作挑战__录像带越狱到一半老板回来了/raw/V2-193_h3_raw.mp4",
+          "bytes": 1283488,
+          "sha256": "647be27096a0090b6936cf77c57c137240b9d60125520333140593731bd3cf7b",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 480,
+                "height": 832,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              },
+              {
+                "index": 1,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "32000",
+                "channels": 2,
+                "r_frame_rate": "0/0"
+              }
+            ],
+            "format": {
+              "duration": "10.125000",
+              "size": "1283488",
+              "bit_rate": "1014113"
+            }
+          }
+        }
+      }
+    ],
+    "prompts": [
+      {
+        "path": "publishing/ready/原创动画__B站AI动画创作挑战__录像带越狱到一半老板回来了/provenance/prompt.txt",
+        "bytes": 1058,
+        "sha256": "37ff106b1d0139661cf44914d0b46e6b3edac65aaa4578eaaf0ee5a074f035a8"
+      }
+    ]
+  },
+  "finishing": {
+    "script": "scripts/render_releases.ps1",
+    "canvas": [
+      1080,
+      1920
+    ],
+    "video": "H.264 High, CRF 18, yuv420p, 24 fps, faststart",
+    "audio": "AAC stereo 48 kHz 192 kbps; EBU R128 target -16 LUFS with -2.5 dBTP headroom and a 0.82 non-normalizing peak limiter",
+    "captions": {
+      "path": "publishing/ready/原创动画__B站AI动画创作挑战__录像带越狱到一半老板回来了/provenance/captions.ass",
+      "bytes": 1455,
+      "sha256": "3e8fd243c11954b6d2d46c4590f19d48d62e02ccea50a9f07e68032b70cf448e"
+    }
+  },
+  "deliverables": {
+    "video": {
+      "path": "publishing/ready/原创动画__B站AI动画创作挑战__录像带越狱到一半老板回来了/录像带越狱到一半老板回来了.mp4",
+      "bytes": 7493618,
+      "sha256": "a9e056b0038de3e0588755f4b8af2daaea2d67d47f085c4df692136ad130b461",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "10.221333",
+          "size": "7493618",
+          "bit_rate": "5865080"
+        }
+      },
+      "measured_loudness": {
+        "integrated_lufs": -19.53,
+        "true_peak_dbtp": -1.94,
+        "loudness_range_lu": 1.9
+      }
+    },
+    "cover": {
+      "path": "publishing/ready/原创动画__B站AI动画创作挑战__录像带越狱到一半老板回来了/录像带越狱到一半老板回来了_封面.jpg",
+      "bytes": 215663,
+      "sha256": "63d313b7813e608c31685e39ad474f006f1590bc233a38e4ea898f4f8ebf83d5"
+    },
+    "posting_card": {
+      "path": "publishing/ready/原创动画__B站AI动画创作挑战__录像带越狱到一半老板回来了/录像带越狱到一半老板回来了_投稿卡.txt",
+      "bytes": 854,
+      "sha256": "5c0679462f8c0d991437d045bb1da3dcc83814ab5c7ff4cc794ce4107e01f162"
+    }
+  },
+  "disclosure": "AI生成 / AI辅助制作；本地MiniMax H3生成，确定性字幕与FFmpeg后期。"
+}

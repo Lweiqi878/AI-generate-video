@@ -15,8 +15,8 @@ Style: AILabel,Microsoft YaHei,27,&H00FFFFFF,&H000000FF,&H65000000,&H65000000,0,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.05,0:00:02.20,Title,,0,0,0,,{\fad(120,160)}歌剧院下班后开始散步
-Dialogue: 0,0:00:00.20,0:00:02.50,Caption,,0,0,0,,{\fad(100,150)}灯一关，它就下班了
-Dialogue: 0,0:00:03.60,0:00:06.40,Caption,,0,0,0,,{\fad(120,160)}四条黄铜腿，小心跨过铅笔
-Dialogue: 0,0:00:07.35,0:00:10.05,Caption,,0,0,0,,{\fad(120,120)}脚步声一响——立刻归位
+Dialogue: 0,0:00:00.05,0:00:02.20,Title,,0,0,0,,{\fad(120,160)}小戏楼下班后，偷偷长腿回家了
+Dialogue: 0,0:00:00.20,0:00:02.70,Caption,,0,0,0,,{\fad(100,150)}关灯后，它每天都会离开底座
+Dialogue: 0,0:00:03.00,0:00:06.45,Caption,,0,0,0,,{\fad(120,160)}今晚才走两步，管理员突然折返
+Dialogue: 0,0:00:06.70,0:00:10.05,Caption,,0,0,0,,{\fad(120,120)}它赶紧装回模型——可还是停歪了
 Dialogue: 1,0:00:00.00,0:00:10.13,AILabel,,0,0,0,,AI生成 / MiniMax H3

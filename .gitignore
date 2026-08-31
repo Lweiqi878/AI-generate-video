@@ -7,7 +7,7 @@ Thumbs.db
 # Reproducible build products are uploaded by CI rather than committed.
 generated/
 
-# Local production intermediates; selected final exports live in deliverables/.
+# Local production intermediates; selected final exports live in publishing/ready/.
 production/
 *.tmp
 *.part

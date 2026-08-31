@@ -1,0 +1,24 @@
+[Script Info]
+Title: V2-023 Cleaning Duel Story Captions
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,Microsoft YaHei,58,&H00FFFFFF,&H000000FF,&H40000000,&H78000000,-1,0,0,0,100,100,1,0,3,2,0,8,62,62,105,1
+Style: Caption,Microsoft YaHei,52,&H00FFFFFF,&H000000FF,&H50000000,&H82000000,-1,0,0,0,100,100,0,0,3,2,0,2,80,80,178,1
+Style: AILabel,Microsoft YaHei,27,&H00FFFFFF,&H000000FF,&H65000000,&H65000000,0,0,0,0,100,100,0,0,3,1,0,3,28,34,40,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.05,0:00:02.50,Title,,0,0,0,,{\fad(120,160)}比利和扫地机的正午决斗
+Dialogue: 0,0:00:00.20,0:00:03.20,Caption,,0,0,0,,{\fad(100,150)}扫地机一开机，比利就听成了决斗钟声
+Dialogue: 0,0:00:03.20,0:00:06.40,Caption,,0,0,0,,{\fad(120,150)}泡沫喷头 VS 高速边刷
+Dialogue: 0,0:00:06.40,0:00:09.40,Caption,,0,0,0,,{\fad(120,150)}正午决斗，正式开始
+Dialogue: 0,0:00:09.40,0:00:12.50,Caption,,0,0,0,,{\fad(120,150)}镜头拉开才发现——
+Dialogue: 0,0:00:12.50,0:00:16.00,Caption,,0,0,0,,{\fad(120,120)}他们争的是“客厅清洁高手”
+Dialogue: 1,0:00:00.00,0:00:16.20,AILabel,,0,0,0,,AI生成 / AI辅助制作

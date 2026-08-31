@@ -17,16 +17,34 @@
 - 同角色、同道具或同题材的近似项只进入人工复核，不在证据不足时自动误删。
 - 详细映射见 [`data/merge_manifest.json`](data/merge_manifest.json)，重复检查见 [`docs/DUPLICATE_AUDIT.md`](docs/DUPLICATE_AUDIT.md)。
 
-## 两支完整试片
+## 四支发布级试片
 
-本仓库包含两支由本地 MiniMax H3 生成并经 FFmpeg 完成包装、字幕、AI标识、音频规范和封面导出的试片：
+本仓库包含四支由本地 MiniMax H3 生成并经 FFmpeg 完成叙事包装、字幕、AI标识、音频规范和封面导出的试片。文件夹统一采用 `游戏或原创分类__激励计划__视频名`：
 
-| 作品 | 成片 | 生成记录 |
+| 作品 | 类型 | 叙事方式 |
 |---|---|---|
-| V2-191《歌剧院下班后开始散步》 | [`deliverables/V2-191-walking-opera/V2-191_final.mp4`](deliverables/V2-191-walking-opera/V2-191_final.mp4) | [`manifest.json`](deliverables/V2-191-walking-opera/manifest.json) |
-| V2-193《午夜录像带从货架集体越狱》 | [`deliverables/V2-193-tape-escape/V2-193_final.mp4`](deliverables/V2-193-tape-escape/V2-193_final.mp4) | [`manifest.json`](deliverables/V2-193-tape-escape/manifest.json) |
+| V2-191《小戏楼下班后，偷偷长腿回家了》 | 原创动画重包装 | 直说“关灯出走—管理员折返—停歪露馅” |
+| V2-193《录像带越狱到一半，老板回来了》 | 原创动画重包装 | 直说“集体逃跑—叠梯开门—钥匙响起装死” |
+| V2-021《汉堡纸机甲出动，只为挡住一滴番茄酱》 | 绝区零AI辅助二创 | 两个8秒段；第一段末帧作为第二段首帧 |
+| V2-023《比利和扫地机的正午决斗，赌注竟是做家务》 | 绝区零AI辅助二创 | 两个8秒段；对峙后连续揭示清洁比赛 |
 
-最终媒体、提示词、封面和哈希保存在 `deliverables/`；较大的原始生成中间件保留在本地 `production/`，不进入Git历史。
+成片入口见 [`publishing/README.md`](publishing/README.md)。较大的原始生成片段、前后帧和审片图保留在本地 `production/`，不进入Git历史；MiniMax部署目录只提供推理服务，不存放本项目结构。
+
+## 发布结构与一键准备
+
+```text
+publishing/
+├─ README.md
+├─ UPLOAD_QUEUE.md
+└─ ready/
+   └─ 游戏__激励计划__视频名/
+      ├─ 视频名.mp4
+      ├─ 视频名_封面.jpg
+      ├─ 视频名_投稿卡.txt
+      └─ provenance/        # 字幕、提示词、生成参数、哈希
+```
+
+运行 `./投稿准备.ps1`，选择作品后会先执行发布校验，再复制投稿卡并在资源管理器中定位成片。需要同时打开平台上传页时运行 `./投稿准备.ps1 -OpenUploadPage`。标有“资格待核验”的作品不会默认关联官方激励话题。
 
 ## 最短使用路径
 
@@ -34,6 +52,8 @@
 python .\scripts\validate_catalog.py
 python .\scripts\audit_duplicates.py --check
 python .\scripts\build_all.py
+python .\scripts\build_publishing.py
+python .\scripts\validate_releases.py
 ```
 
 也可以直接运行 `./run_build.ps1`。构建结果写入：
@@ -75,7 +95,7 @@ python .\scripts\validate_catalog.py
 
 ## 重要边界
 
-- 仓库只保存原创脚本、提示词、检索式、工具和两支原创场景试片，不重新分发游戏官方立绘、CG、配音、音乐或第三方画师图片。
+- 仓库只保存原创脚本、提示词、检索式、工具和四支AI辅助试片，不重新分发游戏官方立绘、CG、配音、音乐或第三方画师图片。
 - “存在创作者计划”不代表生成式AI自动有参赛资格；投稿前需重新核对当期规则、AI条款、时长、分辨率与授权范围。
 - 不克隆官方声优声线，不使用官方原声，不暗示官方合作。
 - 发布时保留生成文件的溯源信息，并在画面和投稿说明中明确标注AI生成/AI辅助制作。

@@ -1,0 +1,24 @@
+[Script Info]
+Title: V2-021 Paper Mech Story Captions
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,Microsoft YaHei,58,&H00FFFFFF,&H000000FF,&H40000000,&H78000000,-1,0,0,0,100,100,1,0,3,2,0,8,62,62,105,1
+Style: Caption,Microsoft YaHei,52,&H00FFFFFF,&H000000FF,&H50000000,&H82000000,-1,0,0,0,100,100,0,0,3,2,0,2,80,80,178,1
+Style: AILabel,Microsoft YaHei,27,&H00FFFFFF,&H000000FF,&H65000000,&H65000000,0,0,0,0,100,100,0,0,3,1,0,3,28,34,40,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.05,0:00:02.50,Title,,0,0,0,,{\fad(120,160)}汉堡纸机甲出动，只为挡住一滴番茄酱
+Dialogue: 0,0:00:00.20,0:00:03.00,Caption,,0,0,0,,{\fad(100,150)}安比只折了一下汉堡纸
+Dialogue: 0,0:00:03.00,0:00:06.35,Caption,,0,0,0,,{\fad(120,150)}它却自己变成了小机甲
+Dialogue: 0,0:00:06.35,0:00:09.20,Caption,,0,0,0,,{\fad(120,150)}接到的第一个战术任务——
+Dialogue: 0,0:00:09.20,0:00:13.20,Caption,,0,0,0,,{\fad(120,150)}挡住一滴番茄酱，保护整张桌子
+Dialogue: 0,0:00:13.20,0:00:16.00,Caption,,0,0,0,,{\fad(120,120)}任务完成：桌面零伤亡
+Dialogue: 1,0:00:00.00,0:00:16.20,AILabel,,0,0,0,,AI生成 / AI辅助制作

@@ -1,0 +1,126 @@
+{
+  "release_id": "V2-191",
+  "work_id": "V2-191",
+  "game": "原创动画",
+  "incentive_plan": "B站AI动画创作挑战",
+  "eligibility": "AI动画活动入口可核验；现金赛道、积分赛道、截止时间与版权条件仍须在投稿当天复核。",
+  "campaign_tag_allowed": false,
+  "title": "小戏楼下班后，偷偷长腿回家了",
+  "folder": "原创动画__B站AI动画创作挑战__小戏楼下班后偷偷长腿回家了",
+  "generation": {
+    "engine": "MiniMax H3 local Studio",
+    "segments": [
+      {
+        "segment": 1,
+        "studio_job_id": "260830-204712-5e5e88",
+        "mode": "t2v",
+        "seed": 2026083097,
+        "media": {
+          "path": "production/原创动画__B站AI动画创作挑战__小戏楼下班后偷偷长腿回家了/raw/V2-191_h3_raw.mp4",
+          "bytes": 1566071,
+          "sha256": "c35d5cb0f9d226c4dbdd97336bdb927f5aa0c969919bf124379c0817902cb889",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 480,
+                "height": 832,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              },
+              {
+                "index": 1,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "32000",
+                "channels": 2,
+                "r_frame_rate": "0/0"
+              }
+            ],
+            "format": {
+              "duration": "10.125000",
+              "size": "1566071",
+              "bit_rate": "1237389"
+            }
+          }
+        }
+      }
+    ],
+    "prompts": [
+      {
+        "path": "publishing/ready/原创动画__B站AI动画创作挑战__小戏楼下班后偷偷长腿回家了/provenance/prompt.txt",
+        "bytes": 1027,
+        "sha256": "a3419ccb26269349c4a17d0729cdcccff4b1850f87d9c0c1e8e868aa6d3f674b"
+      }
+    ]
+  },
+  "finishing": {
+    "script": "scripts/render_releases.ps1",
+    "canvas": [
+      1080,
+      1920
+    ],
+    "video": "H.264 High, CRF 18, yuv420p, 24 fps, faststart",
+    "audio": "AAC stereo 48 kHz 192 kbps; EBU R128 target -16 LUFS with -2.5 dBTP headroom and a 0.82 non-normalizing peak limiter",
+    "captions": {
+      "path": "publishing/ready/原创动画__B站AI动画创作挑战__小戏楼下班后偷偷长腿回家了/provenance/captions.ass",
+      "bytes": 1358,
+      "sha256": "399d54e3e06c816a5bda2c1fe7e39228dc0c76978a1939f6ec871fe0b1813b66"
+    }
+  },
+  "deliverables": {
+    "video": {
+      "path": "publishing/ready/原创动画__B站AI动画创作挑战__小戏楼下班后偷偷长腿回家了/小戏楼下班后偷偷长腿回家了.mp4",
+      "bytes": 8244665,
+      "sha256": "e064b218bcbf0079c231725a974da254b4c72dfacddf5267511a412dc46da1be",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "10.221333",
+          "size": "8244665",
+          "bit_rate": "6452907"
+        }
+      },
+      "measured_loudness": {
+        "integrated_lufs": -16.87,
+        "true_peak_dbtp": -2.65,
+        "loudness_range_lu": 9.6
+      }
+    },
+    "cover": {
+      "path": "publishing/ready/原创动画__B站AI动画创作挑战__小戏楼下班后偷偷长腿回家了/小戏楼下班后偷偷长腿回家了_封面.jpg",
+      "bytes": 224925,
+      "sha256": "6d04cbb23018cc13211b59e1c89fd401b0eb3bc3c4a1b9e2adacddbb33bcc0cf"
+    },
+    "posting_card": {
+      "path": "publishing/ready/原创动画__B站AI动画创作挑战__小戏楼下班后偷偷长腿回家了/小戏楼下班后偷偷长腿回家了_投稿卡.txt",
+      "bytes": 815,
+      "sha256": "7a4b5d6d6fb530fbedb9f36424ba89e596bfd5e26db1f2f288e5c9e1efb5afca"
+    }
+  },
+  "disclosure": "AI生成 / AI辅助制作；本地MiniMax H3生成，确定性字幕与FFmpeg后期。"
+}

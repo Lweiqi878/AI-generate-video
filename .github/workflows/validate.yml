@@ -18,6 +18,10 @@ jobs:
         run: python scripts/audit_duplicates.py --check
       - name: Compile prompt packs
         run: python scripts/build_all.py
+      - name: Build posting cards
+        run: python scripts/build_publishing.py
+      - name: Validate publish-ready releases
+        run: python scripts/validate_releases.py
       - name: Upload compiled text artifact
         uses: actions/upload-artifact@v4
         with:

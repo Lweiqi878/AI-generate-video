@@ -1,0 +1,171 @@
+{
+  "release_id": "V2-023",
+  "work_id": "V2-023",
+  "game": "绝区零",
+  "incentive_plan": "绝区零3.1版本UP主激励计划",
+  "eligibility": "活动入口显示2026-09-08 23:59截止；公开页面未明确生成式AI资格，确认细则前只作普通AI标识二创发布。",
+  "campaign_tag_allowed": false,
+  "title": "比利和扫地机的正午决斗，赌注竟是做家务",
+  "folder": "绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务",
+  "generation": {
+    "engine": "MiniMax H3 local Studio",
+    "segments": [
+      {
+        "segment": 1,
+        "studio_job_id": "260831-191440-9670b8",
+        "mode": "t2v",
+        "seed": 2026083123,
+        "media": {
+          "path": "production/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/segments/01_正午对峙_t2v.mp4",
+          "bytes": 882809,
+          "sha256": "a8f3e76d3659f2657b94e79dfc7a08cb118088e1b4a9be9b66a4f124e5a26d6c",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 480,
+                "height": 832,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              },
+              {
+                "index": 1,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "32000",
+                "channels": 2,
+                "r_frame_rate": "0/0"
+              }
+            ],
+            "format": {
+              "duration": "8.000000",
+              "size": "882809",
+              "bit_rate": "882809"
+            }
+          }
+        }
+      },
+      {
+        "segment": 2,
+        "studio_job_id": "260831-192101-e4dd7c",
+        "mode": "i2v",
+        "seed": 2026083124,
+        "first_frame_asset_id": "40eedbb36853455fbeaaceb711bd699d",
+        "media": {
+          "path": "production/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/segments/02_家务真相_i2v.mp4",
+          "bytes": 1181132,
+          "sha256": "aa727011e9fb853f7534fd65fee617702bce6c8f822bb5031c8439a676203e2f",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 480,
+                "height": 832,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              },
+              {
+                "index": 1,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "32000",
+                "channels": 2,
+                "r_frame_rate": "0/0"
+              }
+            ],
+            "format": {
+              "duration": "8.000000",
+              "size": "1181132",
+              "bit_rate": "1181132"
+            }
+          }
+        }
+      }
+    ],
+    "prompts": [
+      {
+        "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/provenance/prompt_segment_01.txt",
+        "bytes": 1766,
+        "sha256": "060130a21a9bbd119de7413ae34fdf534679007c55335dd28bbfdeb9b0c4cd62"
+      },
+      {
+        "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/provenance/prompt_segment_02.txt",
+        "bytes": 1617,
+        "sha256": "b588b137bd308eeb7691181407f9e0e8bfd6446d62a3aa5138a4a73dba48c1fe"
+      }
+    ]
+  },
+  "finishing": {
+    "script": "scripts/render_releases.ps1",
+    "canvas": [
+      1080,
+      1920
+    ],
+    "video": "H.264 High, CRF 18, yuv420p, 24 fps, faststart",
+    "audio": "AAC stereo 48 kHz 192 kbps; EBU R128 target -16 LUFS with -2.5 dBTP headroom and a 0.82 non-normalizing peak limiter",
+    "captions": {
+      "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/provenance/captions.ass",
+      "bytes": 1537,
+      "sha256": "1dd1baa0700aa855e47cd36f1a49a6ea535fb4f8d387b2a9110d9dfc77c97972"
+    }
+  },
+  "deliverables": {
+    "video": {
+      "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/比利和扫地机的正午决斗赌注竟是做家务.mp4",
+      "bytes": 11191207,
+      "sha256": "6a24d43279ab02d5d6b57f851c0eb9e2e6194ec146fafd67869cc8ee98eb12a0",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "16.121333",
+          "size": "11191207",
+          "bit_rate": "5553489"
+        }
+      },
+      "measured_loudness": {
+        "integrated_lufs": -16.2,
+        "true_peak_dbtp": -2.55,
+        "loudness_range_lu": 2.9
+      }
+    },
+    "cover": {
+      "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/比利和扫地机的正午决斗赌注竟是做家务_封面.jpg",
+      "bytes": 188519,
+      "sha256": "ae45b9e499bec88c823f44adb1c53e428e3e5e5bd843104f89632f42dc6d5e4e"
+    },
+    "posting_card": {
+      "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/比利和扫地机的正午决斗赌注竟是做家务_投稿卡.txt",
+      "bytes": 879,
+      "sha256": "ac13cb220c7c302d6c0e1ba8a9b1cba5d5a264d68edb75d2c028f2958b036f1f"
+    }
+  },
+  "disclosure": "AI生成 / AI辅助制作；本地MiniMax H3生成，确定性字幕与FFmpeg后期。"
+}

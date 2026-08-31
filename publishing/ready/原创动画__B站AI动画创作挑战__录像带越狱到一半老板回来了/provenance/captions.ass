@@ -15,8 +15,9 @@ Style: AILabel,Microsoft YaHei,27,&H00FFFFFF,&H000000FF,&H65000000,&H65000000,0,
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:00.05,0:00:02.20,Title,,0,0,0,,{\fad(120,160)}午夜磁带集体越狱
-Dialogue: 0,0:00:00.20,0:00:02.60,Caption,,0,0,0,,{\fad(100,150)}整点一到，全部长腿
-Dialogue: 0,0:00:03.50,0:00:06.80,Caption,,0,0,0,,{\fad(120,160)}排队、叠梯，准备开门
-Dialogue: 0,0:00:07.20,0:00:10.05,Caption,,0,0,0,,{\fad(120,120)}钥匙响了——装死！
+Dialogue: 0,0:00:00.05,0:00:02.20,Title,,0,0,0,,{\fad(120,160)}录像带越狱到一半，老板回来了
+Dialogue: 0,0:00:00.20,0:00:02.70,Caption,,0,0,0,,{\fad(100,150)}午夜十二点，它们决定集体逃出店
+Dialogue: 0,0:00:02.95,0:00:06.45,Caption,,0,0,0,,{\fad(120,160)}门太高，只好叠成人梯去够开关
+Dialogue: 0,0:00:06.55,0:00:08.35,Caption,,0,0,0,,{\fad(100,100)}老板的钥匙突然响了
+Dialogue: 0,0:00:08.35,0:00:10.05,Caption,,0,0,0,,{\fad(100,100)}全员装死——最下面那盒忘了收腿
 Dialogue: 1,0:00:00.00,0:00:10.13,AILabel,,0,0,0,,AI生成 / MiniMax H3

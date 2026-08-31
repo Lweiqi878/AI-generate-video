@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "as_of": "2026-08-31",
+  "folder_pattern": "{game}__{plan_folder}__{file_title}",
+  "releases": [
+    {
+      "id": "V2-191",
+      "work_id": "V2-191",
+      "game": "原创动画",
+      "incentive_plan": "B站AI动画创作挑战",
+      "plan_folder": "B站AI动画创作挑战",
+      "eligibility": "AI动画活动入口可核验；现金赛道、积分赛道、截止时间与版权条件仍须在投稿当天复核。",
+      "campaign_tag_allowed": false,
+      "platform": "哔哩哔哩",
+      "upload_url": "https://member.bilibili.com/platform/upload/video/frame",
+      "display_title": "小戏楼下班后，偷偷长腿回家了",
+      "file_title": "小戏楼下班后偷偷长腿回家了",
+      "folder": "原创动画__B站AI动画创作挑战__小戏楼下班后偷偷长腿回家了",
+      "synopsis": "关灯后，小戏楼每天都会伸出黄铜腿偷偷散步；管理员突然折返，它慌忙装回模型，却还是停歪了一厘米。",
+      "source_segments": [
+        "production/原创动画__B站AI动画创作挑战__小戏楼下班后偷偷长腿回家了/raw/V2-191_h3_raw.mp4"
+      ],
+      "prompt_files": [
+        "publishing/ready/原创动画__B站AI动画创作挑战__小戏楼下班后偷偷长腿回家了/provenance/prompt.txt"
+      ],
+      "generation_jobs": [
+        {
+          "segment": 1,
+          "studio_job_id": "260830-204712-5e5e88",
+          "mode": "t2v",
+          "seed": 2026083097
+        }
+      ],
+      "cover_time": 4.2,
+      "posting": {
+        "title": "小戏楼下班后，偷偷长腿回家了｜AI原创动画",
+        "description": "关灯后，它每天都会离开底座散步。今晚才走两步，管理员却突然折返……\n\n原创微缩世界短片；画面与音频由本地 MiniMax H3 生成，字幕、剪辑与声音规范由人工完成。",
+        "tags": ["AI动画", "原创动画", "微缩世界", "MiniMaxH3"],
+        "campaign_note": "先按普通AI原创动画发布；核对当期赛道、截止和版权条件后，再决定是否关联活动。"
+      }
+    },
+    {
+      "id": "V2-193",
+      "work_id": "V2-193",
+      "game": "原创动画",
+      "incentive_plan": "B站AI动画创作挑战",
+      "plan_folder": "B站AI动画创作挑战",
+      "eligibility": "AI动画活动入口可核验；现金赛道、积分赛道、截止时间与版权条件仍须在投稿当天复核。",
+      "campaign_tag_allowed": false,
+      "platform": "哔哩哔哩",
+      "upload_url": "https://member.bilibili.com/platform/upload/video/frame",
+      "display_title": "录像带越狱到一半，老板回来了",
+      "file_title": "录像带越狱到一半老板回来了",
+      "folder": "原创动画__B站AI动画创作挑战__录像带越狱到一半老板回来了",
+      "synopsis": "午夜十二点，录像带集体长腿逃跑；它们叠成人梯准备开门时，老板的钥匙突然响了，只好全员装死。",
+      "source_segments": [
+        "production/原创动画__B站AI动画创作挑战__录像带越狱到一半老板回来了/raw/V2-193_h3_raw.mp4"
+      ],
+      "prompt_files": [
+        "publishing/ready/原创动画__B站AI动画创作挑战__录像带越狱到一半老板回来了/provenance/prompt.txt"
+      ],
+      "generation_jobs": [
+        {
+          "segment": 1,
+          "studio_job_id": "260830-204712-51bf35",
+          "mode": "t2v",
+          "seed": 2026083099
+        }
+      ],
+      "cover_time": 4.8,
+      "posting": {
+        "title": "录像带越狱到一半，老板回来了｜AI原创动画",
+        "description": "午夜十二点，整排录像带决定集体逃出店。门太高，它们刚叠好人梯，老板的钥匙声却在门外响了……\n\n原创复古怪物喜剧；画面与音频由本地 MiniMax H3 生成，字幕、剪辑与声音规范由人工完成。",
+        "tags": ["AI动画", "原创动画", "复古录像带", "MiniMaxH3"],
+        "campaign_note": "先按普通AI原创动画发布；核对当期赛道、截止和版权条件后，再决定是否关联活动。"
+      }
+    },
+    {
+      "id": "V2-021",
+      "work_id": "V2-021",
+      "game": "绝区零",
+      "incentive_plan": "绝区零3.1版本UP主激励计划",
+      "plan_folder": "3.1版本UP主激励计划_资格待核验",
+      "eligibility": "活动入口显示2026-09-08 23:59截止；公开页面未明确生成式AI资格，确认细则前只作普通AI标识二创发布。",
+      "campaign_tag_allowed": false,
+      "platform": "哔哩哔哩",
+      "upload_url": "https://member.bilibili.com/platform/upload/video/frame",
+      "display_title": "汉堡纸机甲出动，只为挡住一滴番茄酱",
+      "file_title": "汉堡纸机甲出动只为挡住一滴番茄酱",
+      "folder": "绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱",
+      "synopsis": "安比随手折了一下汉堡包装纸，纸张自己变成小机甲；它把一滴落下的番茄酱误判为终极威胁，举盾完成了唯一任务。",
+      "source_segments": [
+        "production/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/segments/01_机甲诞生_t2v.mp4",
+        "production/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/segments/02_番茄酱任务_i2v.mp4"
+      ],
+      "prompt_files": [
+        "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/provenance/prompt_segment_01.txt",
+        "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/provenance/prompt_segment_02.txt"
+      ],
+      "generation_jobs": [
+        {
+          "segment": 1,
+          "studio_job_id": "260831-191440-bc45cb",
+          "mode": "t2v",
+          "seed": 2026083121
+        },
+        {
+          "segment": 2,
+          "studio_job_id": "260831-192101-6791f4",
+          "mode": "i2v",
+          "seed": 2026083122,
+          "first_frame_asset_id": "76063752cf2543e6bccdfe6452ac99e6"
+        }
+      ],
+      "cover_time": 14.2,
+      "posting": {
+        "title": "汉堡纸机甲出动，只为挡住一滴番茄酱｜绝区零AI短片",
+        "description": "安比只折了一下汉堡纸，它却自己完成变形。纸机甲接到的第一项战术任务，竟然只是保护桌面不被番茄酱弄脏。\n\n非官方AI辅助二创；未使用官方音乐或声优克隆。",
+        "tags": ["绝区零", "安比", "AI动画", "桌面短剧"],
+        "campaign_note": "生成式AI资格待核验：确认3.1版本活动细则允许后，才关联“绝区零UP主激励计划”话题。"
+      }
+    },
+    {
+      "id": "V2-023",
+      "work_id": "V2-023",
+      "game": "绝区零",
+      "incentive_plan": "绝区零3.1版本UP主激励计划",
+      "plan_folder": "3.1版本UP主激励计划_资格待核验",
+      "eligibility": "活动入口显示2026-09-08 23:59截止；公开页面未明确生成式AI资格，确认细则前只作普通AI标识二创发布。",
+      "campaign_tag_allowed": false,
+      "platform": "哔哩哔哩",
+      "upload_url": "https://member.bilibili.com/platform/upload/video/frame",
+      "display_title": "比利和扫地机的正午决斗，赌注竟是做家务",
+      "file_title": "比利和扫地机的正午决斗赌注竟是做家务",
+      "folder": "绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务",
+      "synopsis": "比利把扫地机的开机声听成决斗钟声，双方在客厅摆出西部片架势；镜头拉开才发现，这只是一场谁先把地毯打扫干净的比赛。",
+      "source_segments": [
+        "production/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/segments/01_正午对峙_t2v.mp4",
+        "production/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/segments/02_家务真相_i2v.mp4"
+      ],
+      "prompt_files": [
+        "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/provenance/prompt_segment_01.txt",
+        "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/provenance/prompt_segment_02.txt"
+      ],
+      "generation_jobs": [
+        {
+          "segment": 1,
+          "studio_job_id": "260831-191440-9670b8",
+          "mode": "t2v",
+          "seed": 2026083123
+        },
+        {
+          "segment": 2,
+          "studio_job_id": "260831-192101-e4dd7c",
+          "mode": "i2v",
+          "seed": 2026083124,
+          "first_frame_asset_id": "40eedbb36853455fbeaaceb711bd699d"
+        }
+      ],
+      "cover_time": 14.5,
+      "posting": {
+        "title": "比利和扫地机的正午决斗，赌注竟是做家务｜绝区零AI短片",
+        "description": "扫地机一开机，比利立刻摆出西部决斗姿势。泡沫喷头、边刷、滚过镜头的灰尘球——结果他们争的只是“客厅清洁高手”称号。\n\n非官方AI辅助二创；未使用官方音乐或声优克隆。",
+        "tags": ["绝区零", "比利", "AI动画", "家务喜剧"],
+        "campaign_note": "生成式AI资格待核验：确认3.1版本活动细则允许后，才关联“绝区零UP主激励计划”话题。"
+      }
+    }
+  ]
+}

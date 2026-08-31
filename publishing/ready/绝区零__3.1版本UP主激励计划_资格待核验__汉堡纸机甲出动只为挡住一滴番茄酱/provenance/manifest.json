@@ -1,0 +1,171 @@
+{
+  "release_id": "V2-021",
+  "work_id": "V2-021",
+  "game": "绝区零",
+  "incentive_plan": "绝区零3.1版本UP主激励计划",
+  "eligibility": "活动入口显示2026-09-08 23:59截止；公开页面未明确生成式AI资格，确认细则前只作普通AI标识二创发布。",
+  "campaign_tag_allowed": false,
+  "title": "汉堡纸机甲出动，只为挡住一滴番茄酱",
+  "folder": "绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱",
+  "generation": {
+    "engine": "MiniMax H3 local Studio",
+    "segments": [
+      {
+        "segment": 1,
+        "studio_job_id": "260831-191440-bc45cb",
+        "mode": "t2v",
+        "seed": 2026083121,
+        "media": {
+          "path": "production/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/segments/01_机甲诞生_t2v.mp4",
+          "bytes": 893602,
+          "sha256": "f0937a8c9fdb08ad1d31f49190f6eac4733aa8eb5cd6f9fb2bafaad9e40f0c38",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 480,
+                "height": 832,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              },
+              {
+                "index": 1,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "32000",
+                "channels": 2,
+                "r_frame_rate": "0/0"
+              }
+            ],
+            "format": {
+              "duration": "8.000000",
+              "size": "893602",
+              "bit_rate": "893602"
+            }
+          }
+        }
+      },
+      {
+        "segment": 2,
+        "studio_job_id": "260831-192101-6791f4",
+        "mode": "i2v",
+        "seed": 2026083122,
+        "first_frame_asset_id": "76063752cf2543e6bccdfe6452ac99e6",
+        "media": {
+          "path": "production/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/segments/02_番茄酱任务_i2v.mp4",
+          "bytes": 737680,
+          "sha256": "07070957cf562c4fab048eecd0eeeea8e5cdeea5b3995f382c042144215d5c7d",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 480,
+                "height": 832,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              },
+              {
+                "index": 1,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "32000",
+                "channels": 2,
+                "r_frame_rate": "0/0"
+              }
+            ],
+            "format": {
+              "duration": "8.000000",
+              "size": "737680",
+              "bit_rate": "737680"
+            }
+          }
+        }
+      }
+    ],
+    "prompts": [
+      {
+        "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/provenance/prompt_segment_01.txt",
+        "bytes": 1822,
+        "sha256": "847e9debb59bc449b7f54ef3851be40ba023dcddc0a00a6ae4a1a1b8a69e5a55"
+      },
+      {
+        "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/provenance/prompt_segment_02.txt",
+        "bytes": 1657,
+        "sha256": "b579aa88a1e2d9a77f7b444a11c2f97b0843fed076ce1ce3c59da05721578f25"
+      }
+    ]
+  },
+  "finishing": {
+    "script": "scripts/render_releases.ps1",
+    "canvas": [
+      1080,
+      1920
+    ],
+    "video": "H.264 High, CRF 18, yuv420p, 24 fps, faststart",
+    "audio": "AAC stereo 48 kHz 192 kbps; EBU R128 target -16 LUFS with -2.5 dBTP headroom and a 0.82 non-normalizing peak limiter",
+    "captions": {
+      "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/provenance/captions.ass",
+      "bytes": 1548,
+      "sha256": "dfc4a38b5735b97bd10927068ac4c755f917c17f8e9fbebd77e6d87233c74a49"
+    }
+  },
+  "deliverables": {
+    "video": {
+      "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/汉堡纸机甲出动只为挡住一滴番茄酱.mp4",
+      "bytes": 8624872,
+      "sha256": "18beea4d645ead7f5d3c431e31adcdf7851f6bf78350c8c5509d90217e7751df",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "16.121333",
+          "size": "8624872",
+          "bit_rate": "4279979"
+        }
+      },
+      "measured_loudness": {
+        "integrated_lufs": -15.3,
+        "true_peak_dbtp": -2.33,
+        "loudness_range_lu": 7.8
+      }
+    },
+    "cover": {
+      "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/汉堡纸机甲出动只为挡住一滴番茄酱_封面.jpg",
+      "bytes": 187859,
+      "sha256": "9e25529625afddaa3da4a4cc619308cca4b734ae7e9ad2af5f7ad90a71189786"
+    },
+    "posting_card": {
+      "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/汉堡纸机甲出动只为挡住一滴番茄酱_投稿卡.txt",
+      "bytes": 840,
+      "sha256": "2c877641eabfca263953824a22902a789551374fb7cffe8235a4253e89c9c1eb"
+    }
+  },
+  "disclosure": "AI生成 / AI辅助制作；本地MiniMax H3生成，确定性字幕与FFmpeg后期。"
+}
