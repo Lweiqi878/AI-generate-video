@@ -1,0 +1,40 @@
+{
+  "studio_job_id": "260831-225826-979d14",
+  "submitted_at": "2026-08-31T22:58:26+08:00",
+  "completed_at": "2026-08-31T23:01:08+08:00",
+  "first_frame": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/image2/03_关键帧_最后一个垃圾桶.png",
+  "last_frame": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/image2/04_关键帧_瓶盖战利品.png",
+  "first_frame_asset_id": "e1a1753c86e54ab591d5da42f452a405",
+  "last_frame_asset_id": "4dc46499515544c38a63e90210adf659",
+  "prompt_file": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/prompt_segment_01.txt",
+  "output_file": "production/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/segments/01_垃圾桶到瓶盖_i2v.mp4",
+  "resolved": {
+    "mode": "i2v",
+    "model_pack": "stock",
+    "model": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+    "turbo_lora": null,
+    "creative_lora": null,
+    "creative_lora_strength": 1.0,
+    "steps": 20,
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "ref_image_size": "match",
+    "width": 480,
+    "height": 832,
+    "frames": 124,
+    "actual_seconds": 5.17,
+    "seed": 2026090103,
+    "risk": "medium"
+  },
+  "risk_assessment": null,
+  "studio_output": {
+    "filename": "MiniMax_H3_i2v_00001_.mp4",
+    "bytes": 672141,
+    "duration_seconds": 5.17,
+    "frame_count": 124,
+    "fps": 24,
+    "url": "/api/jobs/260831-225826-979d14/media/0",
+    "poster": "/api/jobs/260831-225826-979d14/poster/0",
+    "favorite": false
+  }
+}

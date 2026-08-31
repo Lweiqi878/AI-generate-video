@@ -1,0 +1,30 @@
+[Script Info]
+Title: V2-143 Anby Last Fry Captions
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Microsoft YaHei,76,&H00FFFFFF,&H000000FF,&H00202020,&H90000000,-1,0,0,0,100,100,1,0,3,3,0,8,70,70,122,1
+Style: Tag,Microsoft YaHei,46,&H0028E7FF,&H000000FF,&H00202020,&H80000000,-1,0,0,0,100,100,1,0,3,2,0,8,70,70,132,1
+Style: Caption,Microsoft YaHei,56,&H00FFFFFF,&H000000FF,&H00202020,&H90000000,-1,0,0,0,100,100,0,0,3,3,0,2,70,70,176,1
+Style: Payoff,Microsoft YaHei,62,&H0028E7FF,&H000000FF,&H00202020,&H90000000,-1,0,0,0,100,100,0,0,3,3,0,2,70,70,176,1
+Style: AILabel,Microsoft YaHei,27,&H00FFFFFF,&H000000FF,&H65000000,&H65000000,0,0,0,0,100,100,0,0,3,1,0,3,28,34,40,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.03,0:00:00.82,Hook,,0,0,0,,{\fad(60,80)}她说只吃一口\N结果只剩这一根
+Dialogue: 0,0:00:00.90,0:00:01.50,Tag,,0,0,0,,{\fad(70,90)}5 秒前
+Dialogue: 0,0:00:01.20,0:00:02.65,Caption,,0,0,0,,{\fad(90,110)}她还认真竖起一根手指
+Dialogue: 0,0:00:02.65,0:00:04.15,Caption,,0,0,0,,{\fad(90,110)}“真的，只吃一口。”
+Dialogue: 0,0:00:04.15,0:00:05.75,Caption,,0,0,0,,{\fad(90,110)}一口、两口、三口……
+Dialogue: 0,0:00:05.75,0:00:06.75,Caption,,0,0,0,,{\fad(80,100)}转眼只剩这一根
+Dialogue: 0,0:00:06.75,0:00:08.10,Caption,,0,0,0,,{\fad(90,110)}她盯着最后一根薯条
+Dialogue: 0,0:00:08.10,0:00:09.10,Caption,,0,0,0,,{\fad(80,100)}掰成两半
+Dialogue: 0,0:00:09.10,0:00:10.65,Payoff,,0,0,0,,{\fad(90,120)}把最后一半留给了我
+Dialogue: 0,0:00:10.45,0:00:11.15,Tag,,0,0,0,,{\fad(80,100)}……好吧，原谅她了
+Dialogue: 1,0:00:00.00,0:00:11.20,AILabel,,0,0,0,,AI生成 / AI辅助制作

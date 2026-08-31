@@ -1,0 +1,29 @@
+[Script Info]
+Title: V2-122 Pom-Pom Trash Can Captions
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Hook,Microsoft YaHei,72,&H00FFFFFF,&H000000FF,&H00202020,&H90000000,-1,0,0,0,100,100,1,0,3,3,0,8,70,70,122,1
+Style: Tag,Microsoft YaHei,46,&H0028E7FF,&H000000FF,&H00202020,&H80000000,-1,0,0,0,100,100,1,0,3,2,0,8,70,70,132,1
+Style: Caption,Microsoft YaHei,56,&H00FFFFFF,&H000000FF,&H00202020,&H90000000,-1,0,0,0,100,100,0,0,3,3,0,2,70,70,176,1
+Style: Payoff,Microsoft YaHei,62,&H0028E7FF,&H000000FF,&H00202020,&H90000000,-1,0,0,0,100,100,0,0,3,3,0,2,70,70,176,1
+Style: AILabel,Microsoft YaHei,27,&H00FFFFFF,&H000000FF,&H65000000,&H65000000,0,0,0,0,100,100,0,0,3,1,0,3,28,34,40,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.03,0:00:00.82,Hook,,0,0,0,,{\fad(60,80)}帕姆已经催了 3 次\N她还在翻最后一个垃圾桶
+Dialogue: 0,0:00:00.90,0:00:01.70,Tag,,0,0,0,,{\fad(70,90)}列车马上发车
+Dialogue: 0,0:00:01.45,0:00:03.10,Caption,,0,0,0,,{\fad(90,110)}可开拓者坚持：“最后一个。”
+Dialogue: 0,0:00:03.10,0:00:04.65,Caption,,0,0,0,,{\fad(90,110)}翻了半天……
+Dialogue: 0,0:00:04.65,0:00:06.05,Payoff,,0,0,0,,{\fad(90,110)}战利品：一枚瓶盖
+Dialogue: 0,0:00:06.00,0:00:07.20,Caption,,0,0,0,,{\fad(90,110)}帕姆：我真的会谢
+Dialogue: 0,0:00:07.20,0:00:08.30,Caption,,0,0,0,,{\fad(80,100)}“还不走？”
+Dialogue: 0,0:00:08.30,0:00:10.45,Caption,,0,0,0,,{\fad(90,120)}帕姆只好亲自把人推上车
+Dialogue: 0,0:00:10.35,0:00:11.15,Tag,,0,0,0,,{\fad(80,100)}这趟车终于能发了
+Dialogue: 1,0:00:00.00,0:00:11.20,AILabel,,0,0,0,,AI生成 / AI辅助制作

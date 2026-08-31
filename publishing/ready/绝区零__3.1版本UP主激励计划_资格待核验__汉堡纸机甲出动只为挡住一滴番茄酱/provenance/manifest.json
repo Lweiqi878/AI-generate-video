@@ -9,6 +9,7 @@
   "folder": "绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱",
   "generation": {
     "engine": "MiniMax H3 local Studio",
+    "image2": null,
     "segments": [
       {
         "segment": 1,
@@ -101,7 +102,9 @@
         "bytes": 1657,
         "sha256": "b579aa88a1e2d9a77f7b444a11c2f97b0843fed076ce1ce3c59da05721578f25"
       }
-    ]
+    ],
+    "local_h3_job_records": [],
+    "creative_documents": []
   },
   "finishing": {
     "script": "scripts/render_releases.ps1",
@@ -163,8 +166,8 @@
     },
     "posting_card": {
       "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__汉堡纸机甲出动只为挡住一滴番茄酱/汉堡纸机甲出动只为挡住一滴番茄酱_投稿卡.txt",
-      "bytes": 840,
-      "sha256": "2c877641eabfca263953824a22902a789551374fb7cffe8235a4253e89c9c1eb"
+      "bytes": 867,
+      "sha256": "8a4508a081c799be6ac2355ce61ebdc576415d8edf5076c46a6cd3a18104995e"
     }
   },
   "disclosure": "AI生成 / AI辅助制作；本地MiniMax H3生成，确定性字幕与FFmpeg后期。"

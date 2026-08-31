@@ -164,6 +164,176 @@
         "tags": ["绝区零", "比利", "AI动画", "家务喜剧"],
         "campaign_note": "生成式AI资格待核验：确认3.1版本活动细则允许后，才关联“绝区零UP主激励计划”话题。"
       }
+    },
+    {
+      "id": "V2-143",
+      "work_id": "V2-143",
+      "game": "绝区零",
+      "incentive_plan": "全平台普通投稿（无激励任务关联）",
+      "plan_folder": "全平台普通投稿_无激励任务关联",
+      "eligibility": "未绑定现金激励任务；发布时仅以对应平台账号内可见的正式任务卡与当期规则为准。",
+      "campaign_tag_allowed": false,
+      "platform": "抖音 / 小红书 / 哔哩哔哩",
+      "upload_url": "https://creator.douyin.com/creator-micro/content/upload",
+      "upload_urls": {
+        "抖音": "https://creator.douyin.com/creator-micro/content/upload",
+        "小红书": "https://creator.xiaohongshu.com/publish/publish",
+        "哔哩哔哩": "https://member.bilibili.com/platform/upload/video/frame"
+      },
+      "display_title": "安比吃光整桌汉堡，却把最后一根薯条留给了我",
+      "file_title": "安比吃光整桌汉堡却把最后一根薯条留给了我",
+      "folder": "绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我",
+      "synopsis": "安比说只吃一口，转眼却只剩最后一根薯条；她犹豫片刻，将薯条掰成两半，把其中一半递给镜头外的同伴。",
+      "source_segments": [
+        "production/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/segments/00_结果前置_hook.mp4",
+        "production/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/segments/01_只吃一口到只剩一根_i2v.mp4",
+        "production/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/segments/02_最后一半给你_i2v.mp4"
+      ],
+      "prompt_files": [
+        "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/prompt_segment_01.txt",
+        "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/prompt_segment_02.txt"
+      ],
+      "image2_assets": [
+        "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/image2/01_角色锚点_安比.png",
+        "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/image2/02_场景锚点_雨夜汉堡店.png",
+        "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/image2/03_关键帧_只吃一口.png",
+        "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/image2/04_关键帧_只剩一根.png",
+        "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/image2/05_关键帧_最后一半给你.png"
+      ],
+      "generation_jobs": [
+        {
+          "segment": 1,
+          "mode": "deterministic_hook",
+          "source_image": "04_关键帧_只剩一根.png"
+        },
+        {
+          "segment": 2,
+          "studio_job_id": "260831-224552-e9de03",
+          "mode": "i2v_first_last",
+          "seed": 2026090101,
+          "first_frame_asset_id": "5070eea01e5043b4a4a80dc060b817c2",
+          "last_frame_asset_id": "f621758e25514dbdbd53cf75a7e0cf00",
+          "steps": 20
+        },
+        {
+          "segment": 3,
+          "studio_job_id": "260831-225207-e04799",
+          "mode": "i2v_first_last",
+          "seed": 2026090102,
+          "first_frame_asset_id": "bcdba70c576d47bf881956cecc12882a",
+          "last_frame_asset_id": "87e6e4f014394723922e4a336a3d6b9c",
+          "steps": 20
+        }
+      ],
+      "cover_time": 0.3,
+      "posting": {
+        "title": "安比说只吃一口，最后却把唯一的薯条留给了我",
+        "description": "她认真保证只吃一口。五秒后，整桌只剩最后一根薯条……然后她把它掰成两半，递了一半给我。\n\n非官方AI辅助二创：角色、场景和首中尾关键帧由Image2生成，本地MiniMax H3完成首尾帧动态，人工完成故事、字幕和剪辑。",
+        "tags": ["绝区零", "安比", "AI动画", "游戏二创"],
+        "campaign_note": "普通投稿，不自动关联激励活动；只有平台账号内出现正式任务卡且规则允许AI辅助内容时再报名。"
+      },
+      "platform_posts": {
+        "抖音": {
+          "title": "安比说只吃一口，最后却把唯一的薯条留给了我",
+          "description": "她真的只留了一根……但最后分了我一半。非官方AI辅助二创。",
+          "tags": ["绝区零", "安比", "游戏二创", "AI动画"]
+        },
+        "小红书": {
+          "title": "被安比留的最后半根薯条治愈到了🍟",
+          "description": "本来想吐槽她说话不算数，看到最后又完全说不出口了。角色、场景与关键帧先由Image2定稿，再交给本地MiniMax H3做动态。",
+          "tags": ["绝区零", "安比", "游戏日常", "AI动画"]
+        },
+        "哔哩哔哩": {
+          "title": "安比吃光整桌汉堡，却把最后一根薯条留给了我｜绝区零AI短片",
+          "description": "安比说只吃一口，转眼只剩最后一根薯条；她犹豫片刻，把它掰成两半，递了一半给镜头外的同伴。\n\n非官方AI辅助二创；未使用官方音乐或声优克隆。",
+          "tags": ["绝区零", "安比", "AI动画", "游戏二创"]
+        }
+      }
+    },
+    {
+      "id": "V2-122",
+      "work_id": "V2-122",
+      "game": "崩坏星穹铁道",
+      "incentive_plan": "全平台普通投稿（无激励任务关联）",
+      "plan_folder": "全平台普通投稿_无激励任务关联",
+      "eligibility": "未绑定现金激励任务；发布时仅以对应平台账号内可见的正式任务卡与当期规则为准。",
+      "campaign_tag_allowed": false,
+      "platform": "抖音 / 小红书 / 哔哩哔哩",
+      "upload_url": "https://creator.douyin.com/creator-micro/content/upload",
+      "upload_urls": {
+        "抖音": "https://creator.douyin.com/creator-micro/content/upload",
+        "小红书": "https://creator.xiaohongshu.com/publish/publish",
+        "哔哩哔哩": "https://member.bilibili.com/platform/upload/video/frame"
+      },
+      "display_title": "帕姆催了三次，开拓者还是要翻完最后一个垃圾桶",
+      "file_title": "帕姆催了三次开拓者还是要翻完最后一个垃圾桶",
+      "folder": "崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶",
+      "synopsis": "列车即将发车，帕姆反复催促，开拓者仍坚持翻完站台最后一个垃圾桶；战利品只是一枚瓶盖，帕姆只好把人推上车。",
+      "source_segments": [
+        "production/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/segments/00_结果前置_hook.mp4",
+        "production/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/segments/01_垃圾桶到瓶盖_i2v.mp4",
+        "production/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/segments/02_帕姆推上车_i2v.mp4"
+      ],
+      "prompt_files": [
+        "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/prompt_segment_01.txt",
+        "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/prompt_segment_02.txt"
+      ],
+      "image2_assets": [
+        "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/image2/01_角色锚点_开拓者与帕姆.png",
+        "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/image2/02_场景锚点_雪夜站台.png",
+        "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/image2/03_关键帧_最后一个垃圾桶.png",
+        "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/image2/04_关键帧_瓶盖战利品.png",
+        "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/image2/05_关键帧_终于上车.png"
+      ],
+      "generation_jobs": [
+        {
+          "segment": 1,
+          "mode": "deterministic_hook",
+          "source_image": "04_关键帧_瓶盖战利品.png"
+        },
+        {
+          "segment": 2,
+          "studio_job_id": "260831-225826-979d14",
+          "mode": "i2v_first_last",
+          "seed": 2026090103,
+          "first_frame_asset_id": "e1a1753c86e54ab591d5da42f452a405",
+          "last_frame_asset_id": "4dc46499515544c38a63e90210adf659",
+          "steps": 20
+        },
+        {
+          "segment": 3,
+          "studio_job_id": "260831-230227-0a654a",
+          "mode": "i2v_first_last",
+          "seed": 2026090104,
+          "first_frame_asset_id": "b43657b3b9ba4c0fa282f2bfbb1830c7",
+          "last_frame_asset_id": "cb88ab231b724ffda2cb25eb85300ca9",
+          "steps": 20
+        }
+      ],
+      "cover_time": 0.3,
+      "posting": {
+        "title": "帕姆催了3次，开拓者还是要翻完最后一个垃圾桶",
+        "description": "列车马上发车，帕姆已经催了三次。可开拓者坚持翻完站台最后一个垃圾桶——战利品只是一枚瓶盖。\n\n非官方AI辅助二创：角色、场景和首中尾关键帧由Image2生成，本地MiniMax H3完成首尾帧动态，人工完成故事、字幕和剪辑。",
+        "tags": ["崩坏星穹铁道", "开拓者", "帕姆", "AI动画"],
+        "campaign_note": "普通投稿，不自动关联激励活动；只有平台账号内出现正式任务卡且规则允许AI辅助内容时再报名。"
+      },
+      "platform_posts": {
+        "抖音": {
+          "title": "帕姆催了3次，开拓者还是要翻完最后一个垃圾桶😂",
+          "description": "列车都要发了，她坚持说这是最后一个。结果只翻出一枚瓶盖……非官方AI辅助二创。",
+          "tags": ["崩坏星穹铁道", "开拓者", "帕姆", "游戏二创"]
+        },
+        "小红书": {
+          "title": "星铁玩家真的会为了垃圾桶错过发车吗？",
+          "description": "帕姆已经催了三次，开拓者还在认真翻站台最后一个垃圾桶。最后帕姆只能亲自把人推上车。",
+          "tags": ["崩坏星穹铁道", "星铁玩家", "帕姆", "AI动画"]
+        },
+        "哔哩哔哩": {
+          "title": "帕姆催了三次，开拓者还是要翻完最后一个垃圾桶｜星铁AI短片",
+          "description": "列车即将发车，开拓者仍坚持翻完站台最后一个垃圾桶；战利品只是一枚瓶盖，帕姆只好把人推上车。\n\n非官方AI辅助二创；未使用官方音乐或声优克隆。",
+          "tags": ["崩坏星穹铁道", "开拓者", "帕姆", "AI动画"]
+        }
+      }
     }
   ]
 }

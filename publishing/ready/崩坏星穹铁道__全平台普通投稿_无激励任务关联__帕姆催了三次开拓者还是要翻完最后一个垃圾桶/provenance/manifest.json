@@ -1,0 +1,264 @@
+{
+  "release_id": "V2-122",
+  "work_id": "V2-122",
+  "game": "崩坏星穹铁道",
+  "incentive_plan": "全平台普通投稿（无激励任务关联）",
+  "eligibility": "未绑定现金激励任务；发布时仅以对应平台账号内可见的正式任务卡与当期规则为准。",
+  "campaign_tag_allowed": false,
+  "title": "帕姆催了三次，开拓者还是要翻完最后一个垃圾桶",
+  "folder": "崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶",
+  "generation": {
+    "engine": "MiniMax H3 local Studio",
+    "image2": {
+      "engine": "Codex built-in Image2",
+      "purpose": "character anchor, scene anchor, and exact story keyframes",
+      "assets": [
+        {
+          "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/image2/01_角色锚点_开拓者与帕姆.png",
+          "bytes": 1901458,
+          "sha256": "01e763198a9b1805b4a6acfd41bb1bee9fe33e9fc93ae90c562d64266bc71d74"
+        },
+        {
+          "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/image2/02_场景锚点_雪夜站台.png",
+          "bytes": 2195449,
+          "sha256": "2739de53b1a3c54f444133143633f3480a2ca0f26088e2c8dd2eca580de89314"
+        },
+        {
+          "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/image2/03_关键帧_最后一个垃圾桶.png",
+          "bytes": 2267303,
+          "sha256": "08d52e74eb652dbc342cde922e42a64654da9cd31c395c38476fbeee81471adc"
+        },
+        {
+          "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/image2/04_关键帧_瓶盖战利品.png",
+          "bytes": 2266732,
+          "sha256": "239fc5b820ed9e72c74bb4c5fe29b4bb69f078a2f73a6625d4074cc723f9e679"
+        },
+        {
+          "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/image2/05_关键帧_终于上车.png",
+          "bytes": 2333542,
+          "sha256": "2ad45ead8c632a37d5ff7c8f32a9abbf50c9995b07729bcf70b1ee7afbfa4eb3"
+        }
+      ]
+    },
+    "segments": [
+      {
+        "segment": 1,
+        "mode": "deterministic_hook",
+        "source_image": "04_关键帧_瓶盖战利品.png",
+        "media": {
+          "path": "production/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/segments/00_结果前置_hook.mp4",
+          "bytes": 133989,
+          "sha256": "e2318a25e40102290b0394ade9dffc4e132688d63b587c831519946e60beee3f",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 480,
+                "height": 832,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              },
+              {
+                "index": 1,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "48000",
+                "channels": 2,
+                "r_frame_rate": "0/0"
+              }
+            ],
+            "format": {
+              "duration": "0.840000",
+              "size": "133989",
+              "bit_rate": "1276085"
+            }
+          }
+        }
+      },
+      {
+        "segment": 2,
+        "studio_job_id": "260831-225826-979d14",
+        "mode": "i2v_first_last",
+        "seed": 2026090103,
+        "first_frame_asset_id": "e1a1753c86e54ab591d5da42f452a405",
+        "last_frame_asset_id": "4dc46499515544c38a63e90210adf659",
+        "steps": 20,
+        "media": {
+          "path": "production/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/segments/01_垃圾桶到瓶盖_i2v.mp4",
+          "bytes": 672141,
+          "sha256": "7aa368b4d5240411cf239ef1967c85a5eb37d8f05a90863687dc3289854fc109",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 480,
+                "height": 832,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              },
+              {
+                "index": 1,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "32000",
+                "channels": 2,
+                "r_frame_rate": "0/0"
+              }
+            ],
+            "format": {
+              "duration": "5.167000",
+              "size": "672141",
+              "bit_rate": "1040667"
+            }
+          }
+        }
+      },
+      {
+        "segment": 3,
+        "studio_job_id": "260831-230227-0a654a",
+        "mode": "i2v_first_last",
+        "seed": 2026090104,
+        "first_frame_asset_id": "b43657b3b9ba4c0fa282f2bfbb1830c7",
+        "last_frame_asset_id": "cb88ab231b724ffda2cb25eb85300ca9",
+        "steps": 20,
+        "media": {
+          "path": "production/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/segments/02_帕姆推上车_i2v.mp4",
+          "bytes": 1223838,
+          "sha256": "6b41bae22576992ca8137aa71cc28d08979c48cfcddc3d699d1b808285e59b0e",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 480,
+                "height": 832,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              },
+              {
+                "index": 1,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "32000",
+                "channels": 2,
+                "r_frame_rate": "0/0"
+              }
+            ],
+            "format": {
+              "duration": "5.167000",
+              "size": "1223838",
+              "bit_rate": "1894852"
+            }
+          }
+        }
+      }
+    ],
+    "prompts": [
+      {
+        "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/prompt_segment_01.txt",
+        "bytes": 1473,
+        "sha256": "4b27c016bb8347079cb78d377138fc863e08ce0e31fc0d2b2e4e88a153dc199c"
+      },
+      {
+        "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/prompt_segment_02.txt",
+        "bytes": 1341,
+        "sha256": "e853bdc975d30e34fd47cc4c9804aca8609b7d9803e655e4305f8c944128686c"
+      }
+    ],
+    "local_h3_job_records": [
+      {
+        "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/h3_segment_01.json",
+        "bytes": 1897,
+        "sha256": "08db13bd6cde41c843090a82ad16c63f2057df3bc2d5dffbd2d562b6205fac52"
+      },
+      {
+        "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/h3_segment_02.json",
+        "bytes": 1886,
+        "sha256": "ef3ab2085c96fd1f6290a27c8824e1a396c200135b181f0448b41a48872f6a91"
+      }
+    ],
+    "creative_documents": [
+      {
+        "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/创作说明.md",
+        "bytes": 1091,
+        "sha256": "9c94520c53402ed73d116d820ea43a54493f904eab31cbfefef2eb070377f095"
+      }
+    ]
+  },
+  "finishing": {
+    "script": "scripts/render_releases.ps1",
+    "canvas": [
+      1080,
+      1920
+    ],
+    "video": "H.264 High, CRF 18, yuv420p, 24 fps, faststart",
+    "audio": "AAC stereo 48 kHz 192 kbps; EBU R128 target -16 LUFS with -2.5 dBTP headroom and a 0.82 non-normalizing peak limiter",
+    "captions": {
+      "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/provenance/captions.ass",
+      "bytes": 1999,
+      "sha256": "051a38538665196cf660347c3c45922963a9a55f326c5ef41515b7aa696c135e"
+    }
+  },
+  "deliverables": {
+    "video": {
+      "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/帕姆催了三次开拓者还是要翻完最后一个垃圾桶.mp4",
+      "bytes": 10382441,
+      "sha256": "d8eb050d49fe85434220bedc8c78f049f580bf7d2fd93dd5413fa68016952314",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "11.321333",
+          "size": "10382441",
+          "bit_rate": "7336550"
+        }
+      },
+      "measured_loudness": {
+        "integrated_lufs": -15.44,
+        "true_peak_dbtp": -2.12,
+        "loudness_range_lu": 3.2
+      }
+    },
+    "cover": {
+      "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/帕姆催了三次开拓者还是要翻完最后一个垃圾桶_封面.jpg",
+      "bytes": 292594,
+      "sha256": "c2e0964422c03459e3f64cef8fcf6c752f864bd7c171b52103b6aadf94c52ea5"
+    },
+    "posting_card": {
+      "path": "publishing/ready/崩坏星穹铁道__全平台普通投稿_无激励任务关联__帕姆催了三次开拓者还是要翻完最后一个垃圾桶/帕姆催了三次开拓者还是要翻完最后一个垃圾桶_投稿卡.txt",
+      "bytes": 1583,
+      "sha256": "bc6bf9d74016a7a649f9d8182ee9ccdf1aa81bd448a81068a004ae7375953c40"
+    }
+  },
+  "disclosure": "AI生成 / AI辅助制作；Image2生成角色、场景与关键帧，本地MiniMax H3完成动态，确定性字幕与FFmpeg后期。"
+}

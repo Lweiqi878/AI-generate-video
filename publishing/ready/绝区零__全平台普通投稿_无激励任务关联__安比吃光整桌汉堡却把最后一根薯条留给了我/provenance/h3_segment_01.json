@@ -1,0 +1,40 @@
+{
+  "studio_job_id": "260831-224552-e9de03",
+  "submitted_at": "2026-08-31T22:45:52+08:00",
+  "completed_at": "2026-08-31T22:49:00+08:00",
+  "first_frame": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/image2/03_关键帧_只吃一口.png",
+  "last_frame": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/image2/04_关键帧_只剩一根.png",
+  "first_frame_asset_id": "5070eea01e5043b4a4a80dc060b817c2",
+  "last_frame_asset_id": "f621758e25514dbdbd53cf75a7e0cf00",
+  "prompt_file": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/prompt_segment_01.txt",
+  "output_file": "production/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/segments/01_只吃一口到只剩一根_i2v.mp4",
+  "resolved": {
+    "mode": "i2v",
+    "model_pack": "stock",
+    "model": "minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+    "turbo_lora": null,
+    "creative_lora": null,
+    "creative_lora_strength": 1.0,
+    "steps": 20,
+    "scheduler": "simple",
+    "denoise": 1.0,
+    "ref_image_size": "match",
+    "width": 480,
+    "height": 832,
+    "frames": 124,
+    "actual_seconds": 5.17,
+    "seed": 2026090101,
+    "risk": "medium"
+  },
+  "risk_assessment": null,
+  "studio_output": {
+    "filename": "MiniMax_H3_i2v_00001_.mp4",
+    "bytes": 738654,
+    "duration_seconds": 5.17,
+    "frame_count": 124,
+    "fps": 24,
+    "url": "/api/jobs/260831-224552-e9de03/media/0",
+    "poster": "/api/jobs/260831-224552-e9de03/poster/0",
+    "favorite": false
+  }
+}

@@ -9,6 +9,7 @@
   "folder": "绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务",
   "generation": {
     "engine": "MiniMax H3 local Studio",
+    "image2": null,
     "segments": [
       {
         "segment": 1,
@@ -101,7 +102,9 @@
         "bytes": 1617,
         "sha256": "b588b137bd308eeb7691181407f9e0e8bfd6446d62a3aa5138a4a73dba48c1fe"
       }
-    ]
+    ],
+    "local_h3_job_records": [],
+    "creative_documents": []
   },
   "finishing": {
     "script": "scripts/render_releases.ps1",
@@ -163,8 +166,8 @@
     },
     "posting_card": {
       "path": "publishing/ready/绝区零__3.1版本UP主激励计划_资格待核验__比利和扫地机的正午决斗赌注竟是做家务/比利和扫地机的正午决斗赌注竟是做家务_投稿卡.txt",
-      "bytes": 879,
-      "sha256": "ac13cb220c7c302d6c0e1ba8a9b1cba5d5a264d68edb75d2c028f2958b036f1f"
+      "bytes": 906,
+      "sha256": "04a5f8060daae6fe0963fca478a00bfb53c06e4d034a873d3455e749bb1a72c9"
     }
   },
   "disclosure": "AI生成 / AI辅助制作；本地MiniMax H3生成，确定性字幕与FFmpeg后期。"

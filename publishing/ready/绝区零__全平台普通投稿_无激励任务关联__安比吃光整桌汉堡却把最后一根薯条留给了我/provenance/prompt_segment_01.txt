@@ -1,0 +1,9 @@
+Use <Picture 1> as the exact first frame and <Picture 2> as the exact final frame. Animate one continuous five-second shot between them. Preserve the same adult-proportioned Anby: silver-gray bob, green eyes, black headphones, black-and-neon-green outfit, face, anatomy and seated position. Preserve the exact rainy burger diner, booth, table, tray, lighting and fixed camera. No scene change and no new subject.
+
+0.0-1.3 seconds: the tray finishes sliding to a stop. Anby keeps her serious “only one bite” gesture for a beat, lowers the finger, and pulls the burger closer with calm focus.
+
+1.3-4.1 seconds: a playful readable time-lapse. Anby takes a few quick modest bites while plain wrapper paper folds down in clean stages. Keep her face stable and the eating tasteful; use brief foreground wrapper movement as natural visual wipes. The burger becomes smaller in clear steps rather than melting. Plain empty wrappers accumulate neatly on the tray.
+
+4.1-5.0 seconds: arrive exactly at <Picture 2>. Only one French fry remains. Anby pauses, holds it horizontally with both hands and glances down with a tiny guilty expression. The companion's single hand rests open at the bottom edge.
+
+Camera: locked eye-level medium shot, at most a very slow two-percent push-in; no cut, whip, shake, orbit or zoom jump. Audio: quiet rainy diner ambience, tray slide, restrained wrapper crinkles, three light comic bite accents, then a short silence on the last fry. No dialogue, music, subtitles, text, logo, watermark, extra hand, extra food, ketchup, body deformation, toy texture, character drift, food morphing or horror expression.

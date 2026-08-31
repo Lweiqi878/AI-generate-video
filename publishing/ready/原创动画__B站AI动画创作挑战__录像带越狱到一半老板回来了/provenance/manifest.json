@@ -9,6 +9,7 @@
   "folder": "原创动画__B站AI动画创作挑战__录像带越狱到一半老板回来了",
   "generation": {
     "engine": "MiniMax H3 local Studio",
+    "image2": null,
     "segments": [
       {
         "segment": 1,
@@ -56,7 +57,9 @@
         "bytes": 1058,
         "sha256": "37ff106b1d0139661cf44914d0b46e6b3edac65aaa4578eaaf0ee5a074f035a8"
       }
-    ]
+    ],
+    "local_h3_job_records": [],
+    "creative_documents": []
   },
   "finishing": {
     "script": "scripts/render_releases.ps1",
@@ -118,8 +121,8 @@
     },
     "posting_card": {
       "path": "publishing/ready/原创动画__B站AI动画创作挑战__录像带越狱到一半老板回来了/录像带越狱到一半老板回来了_投稿卡.txt",
-      "bytes": 854,
-      "sha256": "5c0679462f8c0d991437d045bb1da3dcc83814ab5c7ff4cc794ce4107e01f162"
+      "bytes": 881,
+      "sha256": "f367273259306f7432fc329d779e931e6e34370957e783fb6f31ff0850e5353e"
     }
   },
   "disclosure": "AI生成 / AI辅助制作；本地MiniMax H3生成，确定性字幕与FFmpeg后期。"

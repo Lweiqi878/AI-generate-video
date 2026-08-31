@@ -1,6 +1,8 @@
 [CmdletBinding()]
 param(
     [string]$ReleaseId,
+    [ValidateSet('抖音', '小红书', '哔哩哔哩')]
+    [string]$Platform,
     [switch]$OpenUploadPage,
     [switch]$ValidateOnly
 )
@@ -35,13 +37,61 @@ if ($ValidateOnly) {
     return
 }
 
+$variantNames = @()
+if ($release.platform_posts) {
+    $variantNames = @($release.platform_posts.PSObject.Properties.Name)
+}
+if (-not $Platform) {
+    if ($variantNames.Count -gt 0) {
+        Write-Host "`n选择投稿平台：" -ForegroundColor Cyan
+        for ($index = 0; $index -lt $variantNames.Count; $index++) {
+            Write-Host ("[{0}] {1}" -f ($index + 1), $variantNames[$index])
+        }
+        $platformSelection = Read-Host '输入编号'
+        if ($platformSelection -notmatch '^\d+$' -or [int]$platformSelection -lt 1 -or [int]$platformSelection -gt $variantNames.Count) {
+            throw '无效平台编号。'
+        }
+        $Platform = $variantNames[[int]$platformSelection - 1]
+    }
+    else {
+        $Platform = $release.platform
+    }
+}
+elseif ($variantNames.Count -gt 0 -and $Platform -notin $variantNames) {
+    throw "作品 $($release.id) 没有 $Platform 投稿版本。"
+}
+
+$post = $release.posting
+if ($variantNames.Count -gt 0) {
+    $post = $release.platform_posts.PSObject.Properties[$Platform].Value
+}
+$tags = @($post.tags | ForEach-Object { "#$_" }) -join ' '
+$clipboardText = @"
+【标题】
+$($post.title)
+
+【正文】
+$($post.description)
+
+【标签】
+$tags
+
+【AI标识】
+AI生成 / AI辅助制作
+"@
+
 $folder = Join-Path $root "publishing\ready\$($release.folder)"
 $video = Join-Path $folder "$($release.file_title).mp4"
-$card = Join-Path $folder "$($release.file_title)_投稿卡.txt"
-Set-Clipboard -Value (Get-Content -LiteralPath $card -Raw -Encoding utf8)
+Set-Clipboard -Value $clipboardText
 Start-Process explorer.exe -ArgumentList "/select,`"$video`""
-if ($OpenUploadPage) { Start-Process $release.upload_url }
+if ($OpenUploadPage) {
+    $uploadUrl = $release.upload_url
+    if ($release.upload_urls -and $release.upload_urls.PSObject.Properties.Name -contains $Platform) {
+        $uploadUrl = $release.upload_urls.PSObject.Properties[$Platform].Value
+    }
+    Start-Process $uploadUrl
+}
 
-Write-Host "`n已复制投稿卡并定位成片：" -ForegroundColor Green
-Write-Host $release.posting.title
+Write-Host "`n已复制 $Platform 投稿文案并定位成片：" -ForegroundColor Green
+Write-Host $post.title
 Write-Host "活动处理：$($release.posting.campaign_note)" -ForegroundColor Yellow

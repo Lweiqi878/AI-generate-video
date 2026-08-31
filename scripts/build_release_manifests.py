@@ -79,7 +79,17 @@ def main() -> int:
         captions = provenance / "captions.ass"
         segments = [ROOT / item for item in release["source_segments"]]
         prompts = [ROOT / item for item in release["prompt_files"]]
-        required = [final, cover, card, captions, *segments, *prompts]
+        image2_assets = [ROOT / item for item in release.get("image2_assets", [])]
+        h3_job_records = sorted(provenance.glob("h3_segment_*.json"))
+        creative_documents = [path for path in [provenance / "创作说明.md"] if path.is_file()]
+        required = [
+            final, cover, card, captions,
+            *segments, *prompts, *image2_assets, *h3_job_records, *creative_documents,
+        ]
+        if image2_assets and (not h3_job_records or not creative_documents):
+            raise FileNotFoundError(
+                f"{release['id']} Image2 release must include local H3 job records and 创作说明.md"
+            )
         missing = [str(path) for path in required if not path.is_file()]
         if missing:
             raise FileNotFoundError("Missing release files:\n" + "\n".join(missing))
@@ -101,8 +111,15 @@ def main() -> int:
             "folder": release["folder"],
             "generation": {
                 "engine": "MiniMax H3 local Studio",
+                "image2": {
+                    "engine": "Codex built-in Image2",
+                    "purpose": "character anchor, scene anchor, and exact story keyframes",
+                    "assets": [file_record(path) for path in image2_assets],
+                } if image2_assets else None,
                 "segments": segment_records,
                 "prompts": [file_record(path) for path in prompts],
+                "local_h3_job_records": [file_record(path) for path in h3_job_records],
+                "creative_documents": [file_record(path) for path in creative_documents],
             },
             "finishing": {
                 "script": "scripts/render_releases.ps1",
@@ -116,7 +133,11 @@ def main() -> int:
                 "cover": file_record(cover),
                 "posting_card": file_record(card),
             },
-            "disclosure": "AI生成 / AI辅助制作；本地MiniMax H3生成，确定性字幕与FFmpeg后期。",
+            "disclosure": (
+                "AI生成 / AI辅助制作；Image2生成角色、场景与关键帧，本地MiniMax H3完成动态，确定性字幕与FFmpeg后期。"
+                if image2_assets
+                else "AI生成 / AI辅助制作；本地MiniMax H3生成，确定性字幕与FFmpeg后期。"
+            ),
         }
         provenance.mkdir(parents=True, exist_ok=True)
         target = provenance / "manifest.json"

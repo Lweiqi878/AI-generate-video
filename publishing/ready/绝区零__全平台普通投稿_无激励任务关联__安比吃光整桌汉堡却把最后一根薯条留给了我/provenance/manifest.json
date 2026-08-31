@@ -1,0 +1,264 @@
+{
+  "release_id": "V2-143",
+  "work_id": "V2-143",
+  "game": "绝区零",
+  "incentive_plan": "全平台普通投稿（无激励任务关联）",
+  "eligibility": "未绑定现金激励任务；发布时仅以对应平台账号内可见的正式任务卡与当期规则为准。",
+  "campaign_tag_allowed": false,
+  "title": "安比吃光整桌汉堡，却把最后一根薯条留给了我",
+  "folder": "绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我",
+  "generation": {
+    "engine": "MiniMax H3 local Studio",
+    "image2": {
+      "engine": "Codex built-in Image2",
+      "purpose": "character anchor, scene anchor, and exact story keyframes",
+      "assets": [
+        {
+          "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/image2/01_角色锚点_安比.png",
+          "bytes": 1562656,
+          "sha256": "c7a3c5046d3b2df090ef71ed1f33608f9b0beeb9d190bfd764aed88640cc2e16"
+        },
+        {
+          "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/image2/02_场景锚点_雨夜汉堡店.png",
+          "bytes": 1704072,
+          "sha256": "64433f332405762d0dcb6d584bcecf96bc6422b8b35188356902b6fc02966368"
+        },
+        {
+          "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/image2/03_关键帧_只吃一口.png",
+          "bytes": 2071796,
+          "sha256": "3136665f2369237ce11f14571a8af815af8ad6861d3909f93a566ceb5c19508c"
+        },
+        {
+          "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/image2/04_关键帧_只剩一根.png",
+          "bytes": 2112503,
+          "sha256": "9feffd5d3a61b43589d2af6ac0860d4c945ceff2b60c717fce7fcde08b188e90"
+        },
+        {
+          "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/image2/05_关键帧_最后一半给你.png",
+          "bytes": 2132825,
+          "sha256": "84b55fa6dc3aa35677b4e02365555e282c8c12ab3bbf58f3b5a5b5b15e9d1446"
+        }
+      ]
+    },
+    "segments": [
+      {
+        "segment": 1,
+        "mode": "deterministic_hook",
+        "source_image": "04_关键帧_只剩一根.png",
+        "media": {
+          "path": "production/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/segments/00_结果前置_hook.mp4",
+          "bytes": 131875,
+          "sha256": "cb7921579da449e945994a170db189c5e7ce00eb455b31ec1e8d05064637ae8f",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 480,
+                "height": 832,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              },
+              {
+                "index": 1,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "48000",
+                "channels": 2,
+                "r_frame_rate": "0/0"
+              }
+            ],
+            "format": {
+              "duration": "0.840000",
+              "size": "131875",
+              "bit_rate": "1255952"
+            }
+          }
+        }
+      },
+      {
+        "segment": 2,
+        "studio_job_id": "260831-224552-e9de03",
+        "mode": "i2v_first_last",
+        "seed": 2026090101,
+        "first_frame_asset_id": "5070eea01e5043b4a4a80dc060b817c2",
+        "last_frame_asset_id": "f621758e25514dbdbd53cf75a7e0cf00",
+        "steps": 20,
+        "media": {
+          "path": "production/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/segments/01_只吃一口到只剩一根_i2v.mp4",
+          "bytes": 738654,
+          "sha256": "f640dcaebf983b3941e635993a089cf7449fa302e805a052860cc9f87778d957",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 480,
+                "height": 832,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              },
+              {
+                "index": 1,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "32000",
+                "channels": 2,
+                "r_frame_rate": "0/0"
+              }
+            ],
+            "format": {
+              "duration": "5.167000",
+              "size": "738654",
+              "bit_rate": "1143648"
+            }
+          }
+        }
+      },
+      {
+        "segment": 3,
+        "studio_job_id": "260831-225207-e04799",
+        "mode": "i2v_first_last",
+        "seed": 2026090102,
+        "first_frame_asset_id": "bcdba70c576d47bf881956cecc12882a",
+        "last_frame_asset_id": "87e6e4f014394723922e4a336a3d6b9c",
+        "steps": 20,
+        "media": {
+          "path": "production/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/segments/02_最后一半给你_i2v.mp4",
+          "bytes": 554717,
+          "sha256": "849168f0c90b50a53a1acdacf4b900ebe0d71adf669c67a52ab98ca27558f0aa",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "index": 0,
+                "codec_name": "h264",
+                "codec_type": "video",
+                "width": 480,
+                "height": 832,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              },
+              {
+                "index": 1,
+                "codec_name": "aac",
+                "codec_type": "audio",
+                "sample_rate": "32000",
+                "channels": 2,
+                "r_frame_rate": "0/0"
+              }
+            ],
+            "format": {
+              "duration": "5.167000",
+              "size": "554717",
+              "bit_rate": "858861"
+            }
+          }
+        }
+      }
+    ],
+    "prompts": [
+      {
+        "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/prompt_segment_01.txt",
+        "bytes": 1632,
+        "sha256": "681418072ae96b92fbf20b2ff16a53ddd16c18e8c3c122377c63e61c26dde2ed"
+      },
+      {
+        "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/prompt_segment_02.txt",
+        "bytes": 1349,
+        "sha256": "ab8a75c8adfc5da9509218ecccfb2607b1d7522b4c7214744eef3196cfea5015"
+      }
+    ],
+    "local_h3_job_records": [
+      {
+        "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/h3_segment_01.json",
+        "bytes": 1846,
+        "sha256": "eb61436392895e468f5ff3c1ff0643f9b8dd22cef601564bb926e902efe73ef4"
+      },
+      {
+        "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/h3_segment_02.json",
+        "bytes": 1843,
+        "sha256": "6fa3a517e94cb7f4dde6281288b4bd1f9e938e080483e53761498acbe27e8ccf"
+      }
+    ],
+    "creative_documents": [
+      {
+        "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/创作说明.md",
+        "bytes": 1076,
+        "sha256": "0e1d082edad192d0038b703ae25a0cdb5eb565ac7a4441a53be8b74934485afd"
+      }
+    ]
+  },
+  "finishing": {
+    "script": "scripts/render_releases.ps1",
+    "canvas": [
+      1080,
+      1920
+    ],
+    "video": "H.264 High, CRF 18, yuv420p, 24 fps, faststart",
+    "audio": "AAC stereo 48 kHz 192 kbps; EBU R128 target -16 LUFS with -2.5 dBTP headroom and a 0.82 non-normalizing peak limiter",
+    "captions": {
+      "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/provenance/captions.ass",
+      "bytes": 2053,
+      "sha256": "df7b00a18bb05313c6786106b02939c63f560b070de0f82b8dca0d1565203c3c"
+    }
+  },
+  "deliverables": {
+    "video": {
+      "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/安比吃光整桌汉堡却把最后一根薯条留给了我.mp4",
+      "bytes": 7260477,
+      "sha256": "40ba2ed2764f36af918ba2ed0ee44dca4a50dbd6d82ed59df187c4cf226336cd",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1080,
+            "height": 1920,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "48000",
+            "channels": 2,
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "11.321333",
+          "size": "7260477",
+          "bit_rate": "5130475"
+        }
+      },
+      "measured_loudness": {
+        "integrated_lufs": -15.33,
+        "true_peak_dbtp": -1.76,
+        "loudness_range_lu": 5.3
+      }
+    },
+    "cover": {
+      "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/安比吃光整桌汉堡却把最后一根薯条留给了我_封面.jpg",
+      "bytes": 282948,
+      "sha256": "875f238d1ce8572a0db7a1ff45e00c9b6aa9beb80161d900c92d683c0852d91c"
+    },
+    "posting_card": {
+      "path": "publishing/ready/绝区零__全平台普通投稿_无激励任务关联__安比吃光整桌汉堡却把最后一根薯条留给了我/安比吃光整桌汉堡却把最后一根薯条留给了我_投稿卡.txt",
+      "bytes": 1546,
+      "sha256": "b8cc004d1212deef3dcdac7d0e9f287e83e8e0c04d10c52c27383bd79ba5c967"
+    }
+  },
+  "disclosure": "AI生成 / AI辅助制作；Image2生成角色、场景与关键帧，本地MiniMax H3完成动态，确定性字幕与FFmpeg后期。"
+}

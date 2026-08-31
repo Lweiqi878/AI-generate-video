@@ -11,22 +11,36 @@ CONFIG = ROOT / "data" / "releases.json"
 PUBLISHING = ROOT / "publishing"
 
 
-def posting_card(release: dict) -> str:
-    tags = " ".join(f"#{tag}" for tag in release["posting"]["tags"])
-    return f"""【投稿标题】
-{release['posting']['title']}
+def post_block(platform: str, post: dict) -> str:
+    tags = " ".join(f"#{tag}" for tag in post["tags"])
+    return f"""【{platform}标题】
+{post['title']}
 
-【投稿简介】
-{release['posting']['description']}
+【{platform}正文】
+{post['description']}
 
-【建议标签】
+【{platform}标签】
 {tags}
+"""
 
+
+def posting_card(release: dict) -> str:
+    variants = release.get("platform_posts")
+    if variants:
+        body = "\n".join(post_block(platform, post) for platform, post in variants.items())
+    else:
+        body = post_block(release["platform"], release["posting"])
+    image_workflow = (
+        "角色、场景与首中尾关键帧由 Image2 生成；本地 MiniMax H3 仅完成首尾帧动态；"
+        if release.get("image2_assets")
+        else "画面与音频由本地 MiniMax H3 生成；"
+    )
+    return f"""{body}
 【活动处理】
 {release['posting']['campaign_note']}
 
 【AI标识】
-AI生成 / AI辅助制作；本地 MiniMax H3 生成，人工完成叙事设计、连续镜头衔接、字幕与剪辑。
+AI生成 / AI辅助制作；{image_workflow}人工完成选题、叙事、字幕、声音与剪辑。
 
 【上传文件】
 视频：{release['file_title']}.mp4
@@ -42,7 +56,7 @@ def main() -> int:
         "",
         "最终投稿只进入 `ready/`。每个作品顶层只有成片、封面和投稿卡；提示词、字幕、生成参数与哈希统一放在 `provenance/`。",
         "",
-        "运行 `./投稿准备.ps1`，选择作品后会自动校验、复制投稿卡并在资源管理器中定位成片。",
+        "运行 `./投稿准备.ps1`，选择作品与平台后会自动校验、复制该平台文案并在资源管理器中定位成片；加 `-OpenUploadPage` 可打开对应官方上传页。",
         "",
         "| ID | 游戏/分类 | 激励计划 | 成片 | 活动状态 |",
         "|---|---|---|---|---|",
@@ -65,7 +79,7 @@ def main() -> int:
 
     readme.extend([
         "",
-        "活动名称仅用于排产与归档。带“资格待核验”的作品，在确认当期规则明确接受生成式AI前，只作普通AI标识内容发布。",
+        "活动名称仅用于排产与归档。带“资格待核验”或“无激励任务关联”的作品，在账号内出现正式任务卡且规则明确接受生成式AI前，只作普通AI标识内容发布。",
         "",
     ])
     (PUBLISHING / "README.md").write_text("\n".join(readme), encoding="utf-8")

@@ -9,6 +9,7 @@
   "folder": "原创动画__B站AI动画创作挑战__小戏楼下班后偷偷长腿回家了",
   "generation": {
     "engine": "MiniMax H3 local Studio",
+    "image2": null,
     "segments": [
       {
         "segment": 1,
@@ -56,7 +57,9 @@
         "bytes": 1027,
         "sha256": "a3419ccb26269349c4a17d0729cdcccff4b1850f87d9c0c1e8e868aa6d3f674b"
       }
-    ]
+    ],
+    "local_h3_job_records": [],
+    "creative_documents": []
   },
   "finishing": {
     "script": "scripts/render_releases.ps1",
@@ -118,8 +121,8 @@
     },
     "posting_card": {
       "path": "publishing/ready/原创动画__B站AI动画创作挑战__小戏楼下班后偷偷长腿回家了/小戏楼下班后偷偷长腿回家了_投稿卡.txt",
-      "bytes": 815,
-      "sha256": "7a4b5d6d6fb530fbedb9f36424ba89e596bfd5e26db1f2f288e5c9e1efb5afca"
+      "bytes": 842,
+      "sha256": "5ba35e528fbae9dcf40b66b6a4481ae004084f9a87c7826e9f210f4a90210e6d"
     }
   },
   "disclosure": "AI生成 / AI辅助制作；本地MiniMax H3生成，确定性字幕与FFmpeg后期。"
